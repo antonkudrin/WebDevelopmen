@@ -1,0 +1,123 @@
+div{border:0px solid red;}
+body{font-size:1em;margin:0;}
+a{text-decoration:none;}
+
+.header{
+display: flex;
+justify-content: space-between;
+padding: 1.3%;
+}
+.header a{
+position: relative;
+color: #212121;
+}
+.header a.bg-b:hover{	
+color: #000;
+}
+.header a.bg-b:after{
+display:block;
+position:absolute;
+content: "";
+bottom:-60%;
+left:0;
+width:0;
+height:1px;
+background-color:#212121;
+transition:width 0.4s
+}
+.header a.bg-b:hover:after,
+.header a.bg-b:focus:after {
+width: 100%; 
+}
+.logo {
+margin: auto 5%;
+font:bold 26px arial;
+}
+.navbar{
+width:50%;
+margin: auto 4%;
+}
+.navbar ul{
+display: flex;
+justify-content:space-between;
+list-style-type: none;
+padding:0;
+width: 95%;
+font:bold 20px arial;
+}
+
+.section {
+position:relative;
+}
+.section div.bg-section{
+width: 100%;
+height: 99.5%;	
+background-color:#000;
+opacity: 0.7;
+}
+.section img{
+width: 100%;
+}
+.section h1, p{margin:0;}
+.section div{
+text-align: center;
+width: 100%;
+position:absolute;
+/*font-size: 30px;*/
+color: #FFF;
+}
+.section div.h1 {
+top:36%;
+margin:0;
+font:bold 50px arial; 
+}
+.section div.p {
+font:22px arial;	
+top:50%;
+margin:0;
+}
+.section div.to_order {
+top:68%;
+}
+.section a.buttom-1 {
+border:3px solid #FFF;
+padding: 1.6%;
+margin: 0.5rem;
+color:#FFF;
+font:22px arial;
+transition:background 0.3s, border 0.5s;
+}
+.section a.buttom-1:hover {
+background: #00897B;
+border:3px solid #00897B;
+}
+.section a.buttom-2 {
+border:3px solid #FFF;	
+padding: 1.6%;
+margin: 0.5rem;
+color:#FFF;
+font:22px arial;
+transition:background 0.3s, border 0.5s;
+}
+.section a.buttom-2:hover {
+background: #00897B;
+border:3px solid #00897B;
+}
+.section div.show{top:87%;}
+.section div.show a>.bi{
+color: #FFF;
+transition:width 0.8s, height 0.8s;
+}
+.section div.show a>.bi:hover{
+width: 4.5em;
+height:4.5em;
+}
+
+
+
+
+
+
+
+
+
