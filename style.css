@@ -255,6 +255,31 @@ padding:5%;
 text-align:center;
 font-family:arial;
 }
+@media (max-width: 650px) {
+	section.container-3{
+		grid-template-areas: 
+		"box-1"
+		"box-2"
+		"box-3"
+		"box-4"
+		"box-5"
+		"box-6"
+		"box-7"
+		"box-8"
+		"box-9"
+	;}
+}
+@media (max-width: 950px) {
+	.container-3{
+		grid-template-areas: 
+		"box-1 box-1"
+		"box-2 box-2"
+		"box-3 box-4"
+		"box-5 box-6"
+		"box-7 box-8"
+		"box-9 box-9"
+	;}
+}
 .container-3 div.box-1 {grid-area:box-1;}
 .container-3 div.box-2 {grid-area:box-2;}
 .container-3 div.box-3 {grid-area:box-3;}
