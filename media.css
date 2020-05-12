@@ -18,15 +18,17 @@
 		position: relative;
 	}
 	.header .navbar ul{
-		background-color: #FFF;
+		background-color: #FFFFFF;
 		position: absolute;
 		width: 200px;
 		z-index: 1;
 		font-size:16px;
-		top: 12px;
+		top: auto;
 		right:-30px;
-		display: none;
-		transition: opacity 0.3s;
+		display: block;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.3s ease;
 	}
 	.header .navbar li{
 		margin: 20px;
@@ -34,8 +36,12 @@
 	.navbar label{
 		display:block;
 	}
+	label.targglemenu > i.flaticon-menu-2::before{
+		font-size: 30px;
+	}
 	input.targglemenu:checked ~ ul {
-		display: block;
+		max-height: 500px;
+		transition: max-height 0.7s ease;
 	}
 
 }
