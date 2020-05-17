@@ -391,7 +391,8 @@ color: #FFFFFF;
 padding: 5%;	
 }
 .Team > .box-1 h1,
-.blog >.box-1 h1{
+.blog > .box-1 h1,
+.contact >.box-1 h1{
 	text-align: center;
 	max-width: 700px;
 	margin:50px auto;
@@ -399,12 +400,13 @@ padding: 5%;
 	font-size: 25px;
 }
 .Team > .box-1 p,
-.blog > .box-1 p{
+.blog > .box-1 p,
+.contact > .box-1 p{
 	text-align: center;
 	max-width: 700px;
 	margin:50px auto;
 	color: #212121aa;
-	font-style: 16px;
+	font-size: 16px;
 }
 .blog{
 	background: #E4FDF9;
@@ -528,6 +530,63 @@ box-shadow: 1px 1px 10px #fff;
 }
 .contact .box-2 a:hover{
 color: #00897B;
+}
+.mesege form{
+	width: 90%;
+	margin:4em auto;
+}
+.mesege [type="text"],
+		[type="Email"],
+		[type="tel"]{
+	width: 48%;
+	height: 3em;
+	margin: 1em auto;
+	border: none;
+	border-radius: 10px;
+	text-indent: 20px;
+	font-size: 20px;
+}
+.mesege [type="Email"],
+		[name="surname"]{
+	float: right;
+}
+.mesege	[type="text"]:focus ,
+		[type="Email"]:focus ,
+		[type="tel"]:focus ,
+		textarea:focus{
+	box-shadow: 0px 0px 5px 5px #00897B;
+}
+.mesege textarea{
+	width: 100%;
+	height: 15em;
+	margin: 1em auto;
+	border: none;
+	border-radius: 10px;
+	text-indent: 20px;
+	font-size: 20px;
+	padding: 10px 0;
+}		
+
+.mesege [type="submit"]{
+float: right;
+width: 10em;
+height: 3em;
+font-size: 20px;
+border: none;
+border-radius: 10px;
+background-color:#FFF;
+transition: all 0.3s;
+}
+.mesege [type="submit"]:hover{
+	color: #FFF;
+box-shadow: 0px 0px 5px 3px #FFF;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#4fccd1+0,00c9bc+17,00b5a8+33,3c877e+67,00897b+83,095409+100 */
+background: rgb(79,204,209); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(79,204,209,1) 0%, rgba(0,201,188,1) 17%, rgba(0,181,168,1) 33%, rgba(60,135,126,1) 67%, rgba(0,137,123,1) 83%, rgba(9,84,9,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(79,204,209,1) 0%,rgba(0,201,188,1) 17%,rgba(0,181,168,1) 33%,rgba(60,135,126,1) 67%,rgba(0,137,123,1) 83%,rgba(9,84,9,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(79,204,209,1) 0%,rgba(0,201,188,1) 17%,rgba(0,181,168,1) 33%,rgba(60,135,126,1) 67%,rgba(0,137,123,1) 83%,rgba(9,84,9,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4fccd1', endColorstr='#095409',GradientType=0 ); /* IE6-9 */
+
 }
 
 .footer p{

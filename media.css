@@ -85,7 +85,14 @@
 	.plan div ul {
     margin: 0;
     padding: 10% 20%;
-}
+	}
+	
+	.mesege [type="text"],
+		.mesege [type="Email"],
+		[type="tel"]{
+	width: 100%;
+	float: left;
+
 }
 
 @media (max-width: 950px) {
