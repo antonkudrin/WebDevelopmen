@@ -67,52 +67,52 @@ width: 95%;
 font:bold 1.3em arial;
 }
 /********************/
-.section {
+.goal {
 position:relative;
 }
-.section div.bg-section{
+.goal div.bg-section{
 width: 100%;
 height: 99.5%;	
 background-color:#000;
 opacity: 0.7;
 }
-.section img{
+.goal img{
 width: 100%;
 }
-.section h1, p{margin:0;}
-.section div{
+.goal h1, p{margin:0;}
+.goal div{
 text-align: center;
 width: 100%;
 position:absolute;
 /*font-size: 30px;*/
 color: #FFF;
 }
-.section div.h1 {
+.goal div.h1 {
 top:36%;
 margin:0;
 font:bold 3.5em arial; 
 }
-.section div.p {
+.goal div.p {
 font:1.3em arial;	
 top:50%;
 margin:0;
 }
-.section div.to_order {
+.goal div.to_order {
 top:68%;
 }
-.section a.buttom-1 {
+.goal a.buttom-1 {
 border:3px solid #FFF;
 padding: 1.6%;
-margin: 0.5rem 1rem;
+margin: 0.5rem 1.5rem;
 color:#FFF;
 font:1.4em arial;
 transition:background 0.3s, border 0.5s;
 }
-.section a.buttom-1:hover {
+.goal a.buttom-1:hover {
 background: #00897B;
 border:3px solid #00897B;
 }
-.section a.buttom-2 {
+.goal a.buttom-2 {
 border:3px solid #FFF;	
 padding: 1.6%;
 margin: 0.5rem 0;
@@ -120,21 +120,22 @@ color:#FFF;
 font:1.4em arial;
 transition:background 0.3s, border 0.5s;
 }
-.section a.buttom-2:hover {
+.goal a.buttom-2:hover {
 background: #00897B;
 border:3px solid #00897B;
 }
-.section div.show{top:87%;}
-.section div.show a > .bi{
+.goal div.show{top:87%;}
+.goal div.show a i.fla:before{
 color: #FFF;
-transition:width 0.8s, height 0.8s;
+margin: auto;
+font-size: 2em;
+transition:all 0.8s;
 }
-.section div.show a>.bi:hover{
-width: 4.5em;
-height:4.5em;
+.goal div.show > a i.fla:hover{
+font-size: 2em;
 }
 /****************************************/
-.container-1 {
+.company {
 display: grid;
 grid-row-gap:100px;
 grid-template-areas: 
@@ -144,30 +145,34 @@ padding:10% 5%;
 text-align:center;
 font-family:arial;
 }
-.container-1 div:nth-child(1) {
+.company div:nth-child(1) {
 grid-column: 1/5;
 padding: 0 20%;
 }
-.container-1 div>img{width: 30%;}
-.container-1 div.box-4>img{width:20%;}
-.container-1 div.box-1 h1 {
+.company div i.fla::before{
+	font-size:5em;
+	color: #212121;
+}
+.company div>img{width: 30%;}
+.company div.box-4>img{width:20%;}
+.company div.box-1 h1 {
 color: #000;
 font-size: 30px;
 }
-.container-1 div {
+.company div {
 color: #212121ab;
 margin:0 5%;
 padding:0 10%;
 }
-.container-1 p{font-size: 15px;}
+.company p{font-size: 15px;}
 
-.container-1 div.box-1 {grid-area:box-1;}
-.container-1 div.box-2 {grid-area:box-2;}
-.container-1 div.box-3 {grid-area:box-3;}
-.container-1 div.box-4 {grid-area:box-4;}
+.company div.box-1 {grid-area:box-1;}
+.company div.box-2 {grid-area:box-2;}
+.company div.box-3 {grid-area:box-3;}
+.company div.box-4 {grid-area:box-4;}
 
 /********************/
-.container-2{
+.Service{
 display: grid;
 grid-gap:30px;
 	grid-template-areas: 
@@ -180,49 +185,49 @@ padding:6% 5% 10% 5%;
 text-align:center;
 font-family:arial;
 }
-.container-2 .box-1{padding:0 20%;margin-bottom:6%;}
-.container-2 .box-1 h1{
+.Service .box-1{padding:0 20%;margin-bottom:6%;}
+.Service .box-1 h1{
 color: #000;
 font-size: 30px;
 }
-.container-2 .box-1 p{font-size: 16px;}
-.svg > i.flaticon-smartphone-5::before{
+.Service .box-1 p{font-size: 16px;}
+.svg > i.fla::before{
  font-size: 4rem;
  }
-.container-2 div.info{
+.Service div.info{
 color: #212121ab;
 background-color: #FFF;
 margin:0;
 padding:13%;
 transition:color 0.5s, background 0.5s;
 }
-.container-2 div.info:hover {
+.Service div.info:hover {
 background-color: #00897B;
 color: #FFF;	
 }
-.container-2 a{
+.Service a{
 color: #212121ab;
 border:3px solid #212121ab;
 padding:3.5% 5%;
 font-weight:bold;
 transition:color 0.5s, border 0.5s;
 }
-.container-2 div.info a:hover {
+.Service div.info a:hover {
 border-color: #FFF;
 color: #FFF;	
 }
-.container-2 .info>p{
+.Service .info>p{
 font-size: 15px;
 margin-bottom: 23%;
 }
 	
-.container-2 div.box-1 {grid-area:box-1;}
-.container-2 div.box-2 {grid-area:box-2;}
-.container-2 div.box-3 {grid-area:box-3;}
-.container-2 div.box-4 {grid-area:box-4;}
-.container-2 div.box-5 {grid-area:box-5;}
-.container-2 div.box-6 {grid-area:box-6;}
-.container-2 div.box-7 {grid-area:box-7;}
+.Service div.box-1 {grid-area:box-1;}
+.Service div.box-2 {grid-area:box-2;}
+.Service div.box-3 {grid-area:box-3;}
+.Service div.box-4 {grid-area:box-4;}
+.Service div.box-5 {grid-area:box-5;}
+.Service div.box-6 {grid-area:box-6;}
+.Service div.box-7 {grid-area:box-7;}
 
 /****************/
 
@@ -489,22 +494,25 @@ margin-top: 10%;
 	color: #FFF;
 }
 
-.contact .svg-inline--fa{
+.contact a i.fla{
 	color: #FFFFFF;
 	font-size: 3em;
 	border:1px solid #3949AB;
 	border-radius: 50%;
 	background-color: #3949AB;
-	padding: 0.3em;
-	margin-bottom: 25px;
+	margin:auto;
+	line-height: 2em;
+	display: block;
+	width: 2em;
+	height: 2em;
 }
-
-.contact .fa-map-marker-alt{
-	padding: 0.3em 0.45em;
+.contact i.fla::before{
+	font-size: 1.2em;
+	margin: auto;
 }
-.contact .svg-inline--fa:hover{
+.contact a i.fla:hover{
 animation-name: animail;
-animation-duration: 0.2s;
+animation-duration: 0.4s;
 animation-timing-function: linear;
 animation-iteration-count:3;
 animation-direction: alternate;
@@ -574,7 +582,6 @@ height: 3em;
 font-size: 20px;
 border: none;
 border-radius: 10px;
-background-color:#FFF;
 transition: all 0.3s;
 }
 .mesege [type="submit"]:hover{
