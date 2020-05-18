@@ -6,10 +6,11 @@
 	<meta name="description" content="Описание страницы."/>
 	<meta name="Keywords" content="Ключивые запросы, Описание страницы, Еще описание страницы, И ещё одно."/>
 	<link rel="shortcut icon" href="favicon.jpg" type="image/jpg"/>
-	<link rel="stylesheet" type="text/css" href="style.css"/>
-	<link rel="stylesheet" type="text/css" href="media.css"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/media.css"/>
+	<link rel="stylesheet" type="text/css" href="css/slider.css"/>
 	<link rel="stylesheet" type="text/css" href="font/flaticon.css"/>
-	<!-- <link rel="stylesheet" type="text/css" href="css/all.css"/> -->
+	
 	<title>Веб разрабодка</title>
 </head>
 <body>
@@ -20,7 +21,7 @@
 		<nav class="navbar">
 			<input type="checkbox" name="navmenu" id="navmenu" class="targglemenu">
 			<label for="navmenu" class="targglemenu">
-				<i class=" fla flaticon-menu"></i>
+				<i class="fla flaticon-menu"></i>
 			</label>
 			<ul class="menu"> 
 				<li>
@@ -42,9 +43,13 @@
 					<a href="#Contact" class="bg-b" alt="">Контакты</a>
 				</li>
 				<li>
-					<a href="#" alt="">
-						<i class="flaticon-magnifier"></i>
-					</a>
+					<input type="checkbox" name="searchmenu" id="searchmenu" class="searchmenu">
+					<label for="searchmenu" class="searchmenu">
+						<i class="fla flaticon-magnifier"></i>
+					</label>
+					<form action=".php" class="search_form" method="POST">
+						<input type="text" name="search" class="searchwindow" placeholder="Поиск">
+					</form>
 				</li>
 			</ul>
 		</nav>
@@ -279,6 +284,196 @@
 					<h1>Члены нашей команды</h1>
 					<p>Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты. Одна они предупреждал.</p>
 				</div>
+				  <div class="container">
+				    <div class="slider">
+				      <div class="slider__wrapper">
+				        <div class="slider__item">
+				          <div class="slider__content">
+				            <div class="slider__content_header">
+				              <img class="slider__content_img" src="img/Layer-5.png" alt="">
+				            </div>
+				            <h2 class="slider__content_title">John Doe</h2>
+				            <p class="slider__content_title">General Manager</p>
+				            <div class="slider__content_footer">
+				              <div class="slider__content_avatar">
+				                <img class="slider__content_photo" src="/examples/images/photo-2.jpg" alt="">
+				              </div>
+				              <a href="facebook" class="slider__content_icon">
+				              	<i class="slider__content_icon fla flaticon-logo"></i>
+				              </a>
+				              <a href="tvitter" class="slider__content_icon">
+				              	<i class="slider__content_icon fla flaticon-silhouette"></i>
+				              </a>
+				              <a href="Hootsuite" class="slider__content_icon">
+				              	<i class="slider__content_icon fla flaticon-doodle-ly"></i>
+				              </a>
+				              <a href="#" class="slider__content_icon">
+				              	<i class="slider__content_icon fla flaticon-social-1"></i>
+				              </a>
+				            </div>
+				          </div>
+				        </div>
+				        <div class="slider__item">
+				          <div class="slider__content">
+				            <div class="slider__content_header">
+				              <img class="slider__content_img" src="img/Layer-3.png" alt="">
+				            </div>
+				            <h2 class="slider__content_title">Alexa Biru</h2>
+				            <p class="slider__content_title">Office Director</p>
+				            <div class="slider__content_footer">
+				              <div class="slider__content_avatar">
+				                <img class="slider__content_photo" src="/examples/images/photo-2.jpg" alt="">
+				              </div>
+				              <a href="facebook" class="slider__content_icon">
+				              	<i class="slider__content_icon fla flaticon-logo"></i>
+				              </a>
+				              <a href="tvitter" class="slider__content_icon">
+				              	<i class="slider__content_icon fla flaticon-silhouette"></i>
+				              </a>
+				              <a href="Hootsuite" class="slider__content_icon">
+				              	<i class="slider__content_icon fla flaticon-doodle-ly"></i>
+				              </a>
+				              <a href="#" class="slider__content_icon">
+				              	<i class="slider__content_icon fla flaticon-social-1"></i>
+				              </a>
+				            </div>
+				          </div>
+				        </div>
+				        <div class="slider__item">
+				          <div class="slider__content">
+				            <div class="slider__content_header">
+				              <img class="slider__content_img" src="img/Layer-1.png" alt="">
+				            </div>
+				            <h2 class="slider__content_title">Ronobir sing</h2>
+				            <p class="slider__content_title">Admin</p>
+				            <div class="slider__content_footer">
+				              <div class="slider__content_avatar">
+				                <img class="slider__content_photo" src="/examples/images/photo-2.jpg" alt="">
+				              </div>
+				              <a href="facebook" class="slider__content_icon">
+				              	<i class="slider__content_icon fla flaticon-logo"></i>
+				              </a>
+				              <a href="tvitter" class="slider__content_icon">
+				              	<i class="slider__content_icon fla flaticon-silhouette"></i>
+				              </a>
+				              <a href="Hootsuite" class="slider__content_icon">
+				              	<i class="slider__content_icon fla flaticon-doodle-ly"></i>
+				              </a>
+				              <a href="#" class="slider__content_icon">
+				              	<i class="slider__content_icon fla flaticon-social-1"></i>
+				              </a>
+				            </div>
+				          </div>
+				        </div>
+				        <div class="slider__item">
+				          <div class="slider__content">
+				            <div class="slider__content_header">
+				              <img class="slider__content_img" src="img/Layer-2.png" alt="">
+				            </div>
+				            <h2 class="slider__content_title">John Doe</h2>
+				            <p class="slider__content_title">General Manager</p>
+				            <div class="slider__content_footer">
+				              <div class="slider__content_avatar">
+				                <img class="slider__content_photo" src="/examples/images/photo-2.jpg" alt="">
+				              </div>
+				              <a href="facebook" class="slider__content_icon">
+				              	<i class="slider__content_icon fla flaticon-logo"></i>
+				              </a>
+				              <a href="tvitter" class="slider__content_icon">
+				              	<i class="slider__content_icon fla flaticon-silhouette"></i>
+				              </a>
+				              <a href="Hootsuite" class="slider__content_icon">
+				              	<i class="slider__content_icon fla flaticon-doodle-ly"></i>
+				              </a>
+				              <a href="#" class="slider__content_icon">
+				              	<i class="slider__content_icon fla flaticon-social-1"></i>
+				              </a>
+				            </div>
+				          </div>
+				        </div>
+				        <div class="slider__item">
+				          <div class="slider__content">
+				            <div class="slider__content_header">
+				              <img class="slider__content_img" src="img/Layer-3.png" alt="">
+				            </div>
+				            <h2 class="slider__content_title">John Doe</h2>
+				            <p class="slider__content_title">General Manager</p>
+				            <div class="slider__content_footer">
+				              <div class="slider__content_avatar">
+				                <img class="slider__content_photo" src="/examples/images/photo-2.jpg" alt="">
+				              </div>
+				              <a href="facebook" class="slider__content_icon">
+				              	<i class="slider__content_icon fla flaticon-logo"></i>
+				              </a>
+				              <a href="tvitter" class="slider__content_icon">
+				              	<i class="slider__content_icon fla flaticon-silhouette"></i>
+				              </a>
+				              <a href="Hootsuite" class="slider__content_icon">
+				              	<i class="slider__content_icon fla flaticon-doodle-ly"></i>
+				              </a>
+				              <a href="#" class="slider__content_icon">
+				              	<i class="slider__content_icon fla flaticon-social-1"></i>
+				              </a>
+				            </div>
+				          </div>
+				        </div>
+				        <div class="slider__item">
+				          <div class="slider__content">
+				            <div class="slider__content_header">
+				              <img class="slider__content_img" src="img/Layer-4.png" alt="">
+				            </div>
+				            <h2 class="slider__content_title">John Doe</h2>
+				            <p class="slider__content_title">General Manager</p>
+				            <div class="slider__content_footer">
+				              <div class="slider__content_avatar">
+				                <img class="slider__content_photo" src="/examples/images/photo-2.jpg" alt="">
+				              </div>
+				              <a href="facebook" class="slider__content_icon">
+				              	<i class="slider__content_icon fla flaticon-logo"></i>
+				              </a>
+				              <a href="tvitter" class="slider__content_icon">
+				              	<i class="slider__content_icon fla flaticon-silhouette"></i>
+				              </a>
+				              <a href="Hootsuite" class="slider__content_icon">
+				              	<i class="slider__content_icon fla flaticon-doodle-ly"></i>
+				              </a>
+				              <a href="#" class="slider__content_icon">
+				              	<i class="slider__content_icon fla flaticon-social-1"></i>
+				              </a>
+				            </div>
+				          </div>
+				        </div>
+				        <div class="slider__item">
+				          <div class="slider__content">
+				            <div class="slider__content_header">
+				              <img class="slider__content_img" src="img/Layer-6.png" alt="">
+				            </div>
+				            <h2 class="slider__content_title">John Doe</h2>
+				            <p class="slider__content_title">General Manager</p>
+				            <div class="slider__content_footer">
+				              <div class="slider__content_avatar">
+				                <img class="slider__content_photo" src="/examples/images/photo-2.jpg" alt="">
+				              </div>
+				              <a href="facebook" class="slider__content_icon">
+				              	<i class="slider__content_icon fla flaticon-logo"></i>
+				              </a>
+				              <a href="tvitter" class="slider__content_icon">
+				              	<i class="slider__content_icon fla flaticon-silhouette"></i>
+				              </a>
+				              <a href="Hootsuite" class="slider__content_icon">
+				              	<i class="slider__content_icon fla flaticon-doodle-ly"></i>
+				              </a>
+				              <a href="#" class="slider__content_icon">
+				              	<i class="slider__content_icon fla flaticon-social-1"></i>
+				              </a>
+				            </div>
+				          </div>
+				        </div>
+				      </div>
+				      <a class="slider__control slider__control_left" href="#" role="button"></a>
+				      <a class="slider__control slider__control_right" href="#" role="button"></a>
+				    </div>
+				  </div>
 			</section>
 			<section class="blog" id="blog">
 				<div class="box-1">
@@ -386,6 +581,6 @@
 	<footer class="footer">
 		<p>Все права защищены &copy; 2020</p>
 	</footer>
-	<!-- <script type="text/javascript" src="js/all.js"></script> -->
+	<script type="text/javascript" src="js/slider.js"></script>
 </body>
 </html>
