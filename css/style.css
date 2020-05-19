@@ -1,6 +1,7 @@
 
 
 
+
 div{border:0px solid red;}
 body{font-size: 100%;margin:0;font-family: arial;}
 
@@ -65,7 +66,8 @@ width:0vh;
 min-height: 70px;
 background-color:rgba(51,51,51,0.4);
 overflow:hidden;
-transition: all 1s ease;
+opacity: 0;
+transition: all 0.7s ease, opacity 1.5s;
 
 }
 
@@ -79,12 +81,13 @@ height: 2.5rem;
 border:none;
 border-radius: 10px;
 background-color: #FFF;
-box-shadow: 0px 0px 7px 1px #00897B;
+box-shadow: 0px 0px 7px 1px #00D3A3;
 }
 
 input.searchmenu:checked ~ form.search_form{
 width:350vh;
-transition: all 2s ease;
+opacity: 1;
+transition: all 2.5s ease, opacity 1.7s;
 }
 
 .navbar label.searchmenu{
@@ -536,18 +539,68 @@ margin-top: 10%;
 	border:1px solid #3949AB;
 	border-radius: 50%;
 	background-color: #3949AB;
-	margin:auto;
+	margin: auto;
 	line-height: 2em;
 	display: block;
 	width: 2em;
 	height: 2em;
 }
 
+.contact a.link_ct{
+position: relative;
+display: inline-block;
+margin-bottom: 25px;
+}
+.contact a.link_ct::after{
+content: attr(data-title);
+position: absolute;
+top: 21%;
+left:100%;
+background-color: rgba(57,73,171,0.8); 
+color: #FFF;
+padding: 10px 0;
+font-size: 14px;
+line-height: 14px;
+letter-spacing: normal;
+border-radius: 3px;
+margin-left: 12px;
+display: block;
+max-width:0;
+max-height:300px;
+overflow: hidden;
+opacity: 0;
+transition: opacity 1s;
+}
+
+.contact a.link_ct:before {
+content: "";
+width: 0; 
+height: 0;
+position: absolute; 
+left: 100%; 
+top: calc(40% - 12px);
+border-top: 12px solid transparent;
+border-right: 12px solid rgba(57,73,171,0.8);
+border-bottom: 12px solid transparent;
+opacity: 0;
+}
+.contact a.link_ct:hover::before {
+	opacity: 1;
+	transition: opacity 1s;
+}
+
+.contact a.link_ct:hover::after{
+	max-width: 200px; 
+	padding: 10px;
+	opacity: 1;
+	transition: opacity 1s,;
+}
+
 .contact a i.fla:hover::before{
 animation-name: animail;
 animation-duration: 0.4s;
 animation-timing-function: linear;
-animation-iteration-count:3;
+animation-iteration-count:2;
 animation-direction: alternate;
 animation-fill-mode: none;
 box-shadow: 1px 1px 10px #fff;
@@ -567,6 +620,7 @@ box-shadow: 1px 1px 10px #fff;
 .contact .box-2 a{
 	color: #FFFFFF;
 	line-height: 25px;
+	letter-spacing: 2px;
 	transition: color 0.3s;
 }
 .contact .box-2 a:hover{
