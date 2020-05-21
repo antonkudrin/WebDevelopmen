@@ -1,8 +1,5 @@
 
-
-
-
-div{border:0px solid red;}
+div{border:0px solid rgb(255, 0, 0);}
 body{font-size: 100%;margin:0;font-family: arial;}
 
 main.main {
@@ -538,7 +535,13 @@ margin-top: 10%;
 	font-size: 3.5em;
 	border:1px solid #3949AB;
 	border-radius: 50%;
-	background-color: #3949AB;
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#606aa5+0,5763aa+5,4858a5+13,3949ab+31,2538a3+41,112b9e+50,2538a3+59,3949ab+69,3f4fa8+87,5763aa+94,5e69a5+100 */
+background: rgb(96,106,165); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(96,106,165,1) 0%, rgba(87,99,170,1) 5%, rgba(72,88,165,1) 13%, rgba(57,73,171,1) 31%, rgba(37,56,163,1) 41%, rgba(17,43,158,1) 50%, rgba(37,56,163,1) 59%, rgba(57,73,171,1) 69%, rgba(63,79,168,1) 87%, rgba(87,99,170,1) 94%, rgba(94,105,165,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(96,106,165,1) 0%,rgba(87,99,170,1) 5%,rgba(72,88,165,1) 13%,rgba(57,73,171,1) 31%,rgba(37,56,163,1) 41%,rgba(17,43,158,1) 50%,rgba(37,56,163,1) 59%,rgba(57,73,171,1) 69%,rgba(63,79,168,1) 87%,rgba(87,99,170,1) 94%,rgba(94,105,165,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(96,106,165,1) 0%,rgba(87,99,170,1) 5%,rgba(72,88,165,1) 13%,rgba(57,73,171,1) 31%,rgba(37,56,163,1) 41%,rgba(17,43,158,1) 50%,rgba(37,56,163,1) 59%,rgba(57,73,171,1) 69%,rgba(63,79,168,1) 87%,rgba(87,99,170,1) 94%,rgba(94,105,165,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#606aa5', endColorstr='#5e69a5',GradientType=0 ); /* IE6-9 */
+
 	margin: auto;
 	line-height: 2em;
 	display: block;
