@@ -1,0 +1,73 @@
+.Services {
+  background-color: #e4fdf9;
+}
+
+.Services__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.Services__list__card {
+  width: 370px;
+  background-color: #ffffff;
+  color: #212121;
+  text-align: center;
+
+  margin-bottom: 3.5%;
+  padding: 3.75%;
+
+  transition: all 0.4s ease;
+
+  i.Services__list__card_icon::before {
+    display: inline-block;
+    font-size: 60px;
+    margin: 0;
+    margin-bottom: 25px;
+  }
+
+  .Services__list__card_title {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 1px;
+
+    margin-bottom: 16px;
+  }
+  .Services__list__card_subtitle {
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.75px;
+
+    margin-bottom: 40px;
+  }
+  .Services__list__card_buttom {
+    display: inline-block;
+
+    color: #212121;
+    font-family: "Open Sans";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    border: 2px solid #212121;
+    padding: 15px 10px;
+    transition: all 0.3s ease;
+  }
+
+  .Services__list__card_buttom:hover {
+    color: #ffffff;
+    border-color: #ffffff;
+  }
+}
+
+.Services__list__card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
+  background-color: #00897b;
+  color: #ffffff;
+}

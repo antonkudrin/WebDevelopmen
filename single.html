@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./css/bootstrap-reboot/bootstrap-reboot.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/slider.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="//db.onlinewebfonts.com/c/bb72c5142ae2ae4ca0f9c0653a09871c?family=FontAwesome"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="./font/flaticon.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/ico" />
+    <title>Blog Post | Logo</title>
+  </head>
+  <body>
+    <div class="header__top"></div>
+    <header class="header__nav page__disable">
+      <a href="index.html" class="header__nav__logo">Your Logo</a>
+      <nav class="header__navbar">
+        <input type="checkbox" name="menu" id="menu" class="targgle__menu" />
+        <label for="menu" class="header__nav__menu">
+          <i class="header__nav__menu__icon flaticon-menu"></i>
+        </label>
+        <ul class="navbar__list">
+          <li>
+            <a href="index.html" rel="home" class="navbar__link">Home</a>
+          </li>
+          <li>
+            <a href="index.html" rel="about" class="navbar__link">About</a>
+          </li>
+          <li>
+            <a href="index.html" rel="services" class="navbar__link"
+              >Servicing</a
+            >
+          </li>
+          <li>
+            <a href="portfolio-index.html" rel="portfolio" class="navbar__link"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a href="blog.html" rel="blog" class="navbar__link">Blog</a>
+          </li>
+          <li>
+            <a href="index.html" rel="contact" class="navbar__link"
+              >Contact us</a
+            >
+          </li>
+        </ul>
+        <input
+          type="checkbox"
+          name="search__icon"
+          id="search__icon"
+          class="search__icon"
+        />
+        <label for="search__icon" class="header__nav__search">
+          <i class="header__nav__search__icon flaticon-magnifier"></i>
+        </label>
+        <form action=".php" method="POST" class="search_form">
+          <input
+            class="search__window"
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Search"
+          />
+        </form>
+      </nav>
+    </header>
+
+    <header class="header__head page__disable" style="height: 40vw;">
+      <div class="header__head_background"></div>
+      <img src="" class="header__head_image" alt="" />
+      <div class="header__head_body">
+        <h1 class="header__head_title">
+          Blog template
+        </h1>
+        <p class="header__head_subtitle">
+          Aenean condimentum, lacus sit amet luctus lobortis, dolores et quas
+          molestias excepturi <br />
+          enim tellus ultrices elit, amet consequat enim elit noneas sit amet
+          luctu.
+        </p>
+        <div class="header__head_buttom">
+          <a
+            href="index.html"
+            rel="services"
+            class="head__buttom_link_left buttom__link"
+            >OUR SERVICES</a
+          >
+          <a
+            href="index.html"
+            rel="tariffs"
+            class="head__buttom_link_right buttom__link"
+            >HIRE IS NOW</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main class="blog page__disable" id="blog">
+      <div class="background__page background__page_single">
+        <!-- <aside class="blog__title content__header">
+              <h1 class="content__header_title">Blog</h1>
+              <p class="content__header_subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam,
+              </p>
+            </aside>
+   -->
+        <div class="blog__body">
+          <div class="blog__col_single">
+            <div class="blog__item_single blog__description">
+              <p class="blog__item__title">SEO Quis Vestibulum</p>
+              <div class="blog__date">
+                <i class="blog__icon flaticon-calendary"></i>14.06.2020
+                <i class="blog__icon flaticon-listing"></i>Development
+              </div>
+            </div>
+            <div class="blog__post">
+              <img src="./img/blog/seo.jpg" class="blog__img" alt="image" />
+            </div>
+            <div class="blog__row_single">
+              <p class="blog__lead">
+                Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat...
+              </p>
+              <p class="blog__item__article">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius
+                architecto totam incidunt ullam optio aliquam autem id nostrum
+                dicta ex. Vel vitae asperiores iure suscipit modi qui
+                consequuntur nostrum incidunt?
+              </p>
+              <p class="blog__item__article">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius
+                architecto totam incidunt ullam optio aliquam autem id nostrum
+                dicta ex. Vel vitae asperiores iure suscipit modi qui
+                <a href="#" class="blog__lead_link">consequuntur</a> nostrum
+                incidunt?
+              </p>
+              <p class="blog__item__article">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius
+                architecto totam incidunt ullam optio aliquam autem id nostrum
+                dicta ex. Vel vitae asperiores iure suscipit modi qui
+                consequuntur nostrum incidunt?
+              </p>
+              <p class="blog__after">After: <span>John Doe</span></p>
+              <div class="blog__bio">
+                <div class="blog__avatar">
+                  <img src="./img/user/john.jpg" alt="" />
+                </div>
+                <div class="blog__bio__about">
+                  <h5>
+                    <a href="#" class="blog__lead_link">John Doe</a>
+                  </h5>
+                  <p class="blog__item__article">
+                    Jon Doe is lorem quis bibendum auctor, nisi elit consequat
+                    ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet
+                    nibh vulputate cursus a sit amet mauris. Morbi accumsan
+                    ipsum velit. Duis sed odio sit amet nibh vulputate cursus a
+                    sit amet mauris. Morbi elit consequat ipsum.
+                  </p>
+                </div>
+              </div>
+
+              <p class="blog__comments">5 Comments</p>
+
+              <ol class="blog__comments__list">
+                <li class="depth-1">
+                  <div class="blog__comment">
+                    <div class="blog__avatar">
+                      <img src="./img/user/user-01.png" alt="" />
+                    </div>
+                    <div class="blog__comment__about">
+                      <cite>Itachi Uchiha</cite>
+                      <h5>
+                        <time datetime="2014-01-14T23:05"
+                          >mai 14, 2020 @ 23:05
+                        </time>
+                        <span>/</span>
+                        <a href="#" class="blog__lead_link"> Reply</a>
+                      </h5>
+                      <p class="blog__item__article">
+                        Adhuc quaerendum est ne, vis ut harum tantas noluisse,
+                        id suas iisque mei. Nec te inani ponderum vulputate,
+                        facilisi expetenda has et. Iudico dictas scriptorem an
+                        vim, ei alia mentitum est, ne has voluptua praesent.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li class="depth-1">
+                  <div class="blog__comment">
+                    <div class="blog__avatar">
+                      <img src="./img/user/user-02.png" alt="" />
+                    </div>
+                    <div class="blog__comment__about">
+                      <cite>John Doe</cite>
+                      <h5>
+                        <time datetime="2014-01-14T23:05"
+                          >mai 14, 2020 @ 23:05
+                        </time>
+                        <span>/</span>
+                        <a href="#" class="blog__lead_link"> Reply</a>
+                      </h5>
+                      <p class="blog__item__article">
+                        Sumo euismod dissentiunt ne sit, ad eos iudico qualisque
+                        adversarium, tota falli et mei. Esse euismod urbanitas
+                        ut sed, et duo scaevola pericula splendide. Primis
+                        veritus contentiones nec ad, nec et tantas semper
+                        delicatissimi.
+                      </p>
+                    </div>
+                  </div>
+                  <ul class="children">
+                    <li class="depth-2">
+                      <div class="blog__comment">
+                        <div class="blog__avatar">
+                          <img src="./img/user/user-03.png" alt="" />
+                        </div>
+                        <div class="blog__comment__about">
+                          <cite>Kakashi Hatake</cite>
+                          <h5>
+                            <time datetime="2014-01-14T23:05"
+                              >mai 14, 2020 @ 23:05
+                            </time>
+                            <span>/</span>
+                            <a href="#" class="blog__lead_link"> Reply</a>
+                          </h5>
+                          <p class="blog__item__article">
+                            Duis sed odio sit amet nibh vulputate cursus a sit
+                            amet mauris. Morbi accumsan ipsum velit. Duis sed
+                            odio sit amet nibh vulputate cursus a sit amet
+                            mauris
+                          </p>
+                        </div>
+                      </div>
+                      <ul class="children">
+                        <li class="depth-3">
+                          <div class="blog__comment">
+                            <div class="blog__avatar">
+                              <img src="./img/user/user-01.png" alt="" />
+                            </div>
+                            <div class="blog__comment__about">
+                              <cite>Alexa Biru</cite>
+                              <h5>
+                                <time datetime="2014-01-14T23:05"
+                                  >mai 14, 2020 @ 23:05
+                                </time>
+                                <span>/</span>
+                                <a href="#" class="blog__lead_link"> Reply</a>
+                              </h5>
+                              <p class="blog__item__article">
+                                Investigationes demonstraverunt lectores legere
+                                me lius quod ii legunt saepius. Claritas est
+                                etiam processus dynamicus, qui sequitur
+                                mutationem consuetudium lectorum.
+                              </p>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="depth-1">
+                  <div class="blog__comment">
+                    <div class="blog__avatar">
+                      <img src="./img/user/user-02.png" alt="" />
+                    </div>
+                    <div class="blog__comment__about">
+                      <cite>Hinata Hyuga</cite>
+                      <h5>
+                        <time datetime="2014-01-14T23:05"
+                          >mai 14, 2020 @ 23:05
+                        </time>
+                        <span>/</span>
+                        <a href="#" class="blog__lead_link"> Reply</a>
+                      </h5>
+                      <p class="blog__item__article">
+                        Typi non habent claritatem insitam; est usus legentis in
+                        iis qui facit eorum claritatem.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ol>
+            </div>
+
+            <div class="contact__mesege comment">
+              <h3 class="blog__comments">Leave a Comment</h3>
+              <form action="formdata.php" method="POST" name="form1">
+                <input type="text" name="contactName" placeholder="Your NAME" />
+                <input
+                  type="Email"
+                  name="contacEmail"
+                  placeholder="Your Email"
+                />
+                <br />
+                <textarea
+                  name="contacMesege"
+                  placeholder="Write Massage..."
+                ></textarea
+                ><br />
+                <input type="submit" name="submit" value="Send" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>Все права защищены &copy; 2020</p>
+    </footer>
+
+    <script src="./js/jquery/jquery-3.5.1.min.js"></script>
+    <script src="./js/jquery/jquery.malihu.PageScroll2id.min.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

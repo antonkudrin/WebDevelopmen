@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./css/bootstrap-reboot/bootstrap-reboot.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/slider.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="//db.onlinewebfonts.com/c/bb72c5142ae2ae4ca0f9c0653a09871c?family=FontAwesome"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="./font/flaticon.css" />
+    <title>Portfolio | Logo</title>
+  </head>
+  <body>
+    <div class="header__top"></div>
+    <header class="header__nav page__disable">
+      <a href="index.html" class="header__nav__logo">Your Logo</a>
+      <nav class="header__navbar">
+        <input type="checkbox" name="menu" id="menu" class="targgle__menu" />
+        <label for="menu" class="header__nav__menu">
+          <i class="header__nav__menu__icon flaticon-menu"></i>
+        </label>
+        <ul class="navbar__list">
+          <li>
+            <a href="index.html" rel="home" class="navbar__link">Home</a>
+          </li>
+          <li>
+            <a href="index.html" rel="about" class="navbar__link">About</a>
+          </li>
+          <li>
+            <a href="index.html" rel="services" class="navbar__link"
+              >Servicing</a
+            >
+          </li>
+          <li>
+            <a href="portfolio-index.html" rel="portfolio" class="navbar__link"
+              >Portfolio</a
+            >
+          </li>
+          <li>
+            <a href="blog.html" rel="blog" class="navbar__link">Blog</a>
+          </li>
+          <li>
+            <a href="index.html" rel="contact" class="navbar__link"
+              >Contact us</a
+            >
+          </li>
+        </ul>
+        <input
+          type="checkbox"
+          name="search__icon"
+          id="search__icon"
+          class="search__icon"
+        />
+        <label for="search__icon" class="header__nav__search">
+          <i class="header__nav__search__icon flaticon-magnifier"></i>
+        </label>
+        <form action=".php" method="POST" class="search_form">
+          <input
+            class="search__window"
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Search"
+          />
+        </form>
+      </nav>
+    </header>
+
+    <header class="header__head page__disable" style="height: 40vw;">
+      <div class="header__head_background"></div>
+      <img src="" class="header__head_image" alt="" />
+      <div class="header__head_body">
+        <h1 class="header__head_title">
+          Our Amazing Works
+        </h1>
+        <p class="header__head_subtitle">
+          Aenean condimentum, lacus sit amet luctus lobortis, dolores et quas
+          molestias excepturi <br />
+          enim tellus ultrices elit, amet consequat enim elit noneas sit amet
+          luctu.
+        </p>
+        <div class="header__head_buttom">
+          <a
+            href="index.html"
+            rel="services"
+            class="head__buttom_link_left buttom__link"
+            >OUR SERVICES</a
+          >
+          <a
+            href="index.html"
+            rel="tariffs"
+            class="head__buttom_link_right buttom__link"
+            >HIRE IS NOW</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <div class="portfolio">
+      <div class="background__page">
+        <!-- <aside class="portfolio__title content__header">
+            <h1 class="content__header_title">Latest Works</h1>
+            <p class="content__header_subtitle">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam,
+            </p>
+          </aside> -->
+
+        <div class="portfolio__nav">
+          <a
+            href="portfolio-index.html"
+            class="portfolio__nav__link buttom__link page_active"
+            >ALL</a
+          >
+          <a
+            href="portfolio-index.html"
+            class="portfolio__nav__link buttom__link"
+            >WEB DESIGN</a
+          >
+          <a
+            href="portfolio-index.html"
+            class="portfolio__nav__link buttom__link"
+            >UI/UX DESIGN</a
+          >
+          <a
+            href="portfolio-index.html"
+            class="portfolio__nav__link buttom__link"
+            >MOCKUPS</a
+          >
+        </div>
+
+        <div class="portfolio__body">
+          <div class="portfolio__body__item">
+            <a href="portfolio.html" alt="" class="bg-portfolio__body__item">
+              <h1 class="title-portfolio__body__item">Hand Watch</h1>
+              <p class="subtitle-portfolio__body__item">ui/ux design</p>
+            </a>
+
+            <img
+              src="./img/portfolio/Web-Development-skin.jpg "
+              class="portfolio__body__item_image"
+              alt="image"
+            />
+          </div>
+          <div class="portfolio__body__item">
+            <a href="portfolio.html" alt="" class="bg-portfolio__body__item">
+              <h1 class="title-portfolio__body__item">Hand Watch</h1>
+              <p class="subtitle-portfolio__body__item">ui/ux design</p>
+            </a>
+            <img
+              src="./img/portfolio/Layer-2.jpg"
+              class="portfolio__body__item_image"
+              alt="image"
+            />
+          </div>
+          <div class="portfolio__body__item">
+            <a href="portfolio.html" alt="" class="bg-portfolio__body__item">
+              <h1 class="title-portfolio__body__item">Hand Watch</h1>
+              <p class="subtitle-portfolio__body__item">ui/ux design</p>
+            </a>
+
+            <img
+              src="./img/portfolio/Layer-3.jpg"
+              class="portfolio__body__item_image"
+              alt="image"
+            />
+          </div>
+          <div class="portfolio__body__item">
+            <a href="portfolio.html" alt="" class="bg-portfolio__body__item">
+              <h1 class="title-portfolio__body__item">Hand Watch</h1>
+              <p class="subtitle-portfolio__body__item">ui/ux design</p>
+            </a>
+
+            <img
+              src="./img/portfolio/Layer-4.jpg"
+              class="portfolio__body__item_image"
+              alt="image"
+            />
+          </div>
+          <div class="portfolio__body__item">
+            <a href="portfolio.html" alt="" class="bg-portfolio__body__item">
+              <h1 class="title-portfolio__body__item">Hand Watch</h1>
+              <p class="subtitle-portfolio__body__item">ui/ux design</p>
+            </a>
+
+            <img
+              src="./img/portfolio/Layer-5.jpg"
+              class="portfolio__body__item_image"
+              alt="image"
+            />
+          </div>
+          <div class="portfolio__body__item">
+            <a href="portfolio.html" alt="" class="bg-portfolio__body__item">
+              <h1 class="title-portfolio__body__item">Hand Watch</h1>
+              <p class="subtitle-portfolio__body__item">ui/ux design</p>
+            </a>
+
+            <img
+              src="./img/portfolio/Layer-6.jpg"
+              class="portfolio__body__item_image"
+              alt="image"
+            />
+          </div>
+
+          <div class="portfolio__body__item">
+            <a href="portfolio.html" alt="" class="bg-portfolio__body__item">
+              <h1 class="title-portfolio__body__item">1 Hand Watch</h1>
+              <p class="subtitle-portfolio__body__item">ui/ux design</p>
+            </a>
+
+            <img
+              src="./img/portfolio/Layer-1.jpg"
+              class="portfolio__body__item_image"
+              alt="image"
+            />
+          </div>
+          <div class="portfolio__body__item">
+            <a href="portfolio.html" alt="" class="bg-portfolio__body__item">
+              <h1 class="title-portfolio__body__item">Hand Watch</h1>
+              <p class="subtitle-portfolio__body__item">ui/ux design</p>
+            </a>
+            <img
+              src="./img/portfolio/Layer-2.jpg"
+              class="portfolio__body__item_image"
+              alt="image"
+            />
+          </div>
+          <div class="portfolio__body__item">
+            <a href="portfolio.html" alt="" class="bg-portfolio__body__item">
+              <h1 class="title-portfolio__body__item">Hand Watch</h1>
+              <p class="subtitle-portfolio__body__item">ui/ux design</p>
+            </a>
+
+            <img
+              src="./img/portfolio/Layer-3.jpg"
+              class="portfolio__body__item_image"
+              alt="image"
+            />
+          </div>
+          <div class="portfolio__body__item">
+            <a href="portfolio.html" alt="" class="bg-portfolio__body__item">
+              <h1 class="title-portfolio__body__item">Hand Watch</h1>
+              <p class="subtitle-portfolio__body__item">ui/ux design</p>
+            </a>
+
+            <img
+              src="./img/portfolio/Layer-4.jpg"
+              class="portfolio__body__item_image"
+              alt="image"
+            />
+          </div>
+          <div class="portfolio__body__item">
+            <a href="portfolio.html" alt="" class="bg-portfolio__body__item">
+              <h1 class="title-portfolio__body__item">Hand Watch</h1>
+              <p class="subtitle-portfolio__body__item">ui/ux design</p>
+            </a>
+
+            <img
+              src="./img/portfolio/Layer-5.jpg"
+              class="portfolio__body__item_image"
+              alt="image"
+            />
+          </div>
+          <div class="portfolio__body__item">
+            <a href="portfolio.html" alt="" class="bg-portfolio__body__item">
+              <h1 class="title-portfolio__body__item">Hand Watch</h1>
+              <p class="subtitle-portfolio__body__item">ui/ux design</p>
+            </a>
+
+            <img
+              src="./img/portfolio/Layer-6.jpg"
+              class="portfolio__body__item_image"
+              alt="image"
+            />
+          </div>
+        </div>
+
+        <div class="page_numbers">
+          <a href="#" class="page_number buttom__link">Prev</a>
+          <a href="#" class="page_number page_active buttom__link">1</a>
+          <a href="#" class="page_number buttom__link">2</a>
+          <a href="#" class="page_number buttom__link">3</a>
+          <a href="#" class="page_number buttom__link">4</a>
+          <a href="#" class="page_number buttom__link disablet_item">5</a>
+          <a href="#" class="page_number buttom__link disablet_item">6</a>
+          <a href="#" class="page_number buttom__link disablet_item">7</a>
+          <a href="#" class="page_number buttom__link disablet_item">8</a>
+          <a href="#" class="page_number buttom__link">Next</a>
+        </div>
+        <div class="portfolio__footer">
+          <a href="index.html" class="portfolio__footer__link buttom__link"
+            >Hire is now</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>Все права защищены &copy; 2020</p>
+    </footer>
+
+    <script src="./js/jquery/jquery-3.5.1.min.js"></script>
+    <script src="./js/jquery/jquery.malihu.PageScroll2id.min.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

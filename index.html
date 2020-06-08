@@ -1,806 +1,893 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
   <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./css/bootstrap-reboot/bootstrap-reboot.min.css"
     />
-    <meta name="description" content="Описание страницы." />
-    <meta
-      name="Keywords"
-      content="Ключивые запросы, Описание страницы, Еще описание страницы, И ещё одно."
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/slider.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
     />
-    <link rel="shortcut icon" href="favicon.jpg" type="image/jpg" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <link rel="stylesheet" type="text/css" href="css/media.css" />
-    <link rel="stylesheet" type="text/css" href="css/slider.css" />
-    <link rel="stylesheet" type="text/css" href="font/flaticon.css" />
-    <title>Веб разрабодка</title>
+    <link
+      href="//db.onlinewebfonts.com/c/bb72c5142ae2ae4ca0f9c0653a09871c?family=FontAwesome"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="./font/flaticon.css" />
+    <title>Web development project</title>
   </head>
   <body>
-    <header class="header">
-      <div class="logo">
-        <a href="/">AValler</a>
-      </div>
-      <nav class="navbar">
-        <input
-          type="checkbox"
-          name="navmenu"
-          id="navmenu"
-          class="targglemenu"
-        />
-        <label for="navmenu" class="targglemenu">
-          <i class="fla flaticon-menu"></i>
+    <div class="header__top" id="home"></div>
+    <header class="header__nav page__disable">
+      <a href="index.html" class="header__nav__logo">Your Logo</a>
+      <nav class="header__navbar">
+        <input type="checkbox" name="menu" id="menu" class="targgle__menu" />
+        <label for="menu" class="header__nav__menu">
+          <i class="header__nav__menu__icon flaticon-menu"></i>
         </label>
-        <ul class="navmenu">
+        <ul class="navbar__list">
           <li>
-            <a href="#company" name="company" class="nav-link" alt="">О компании</a>
+            <a href="#home" rel="home" class="navbar__link">Home</a>
           </li>
           <li>
-            <a href="#Team" name="Team" class="nav-link" alt="">О Нас</a>
+            <a href="#about" rel="about" class="navbar__link">About</a>
           </li>
           <li>
-            <a href="#Service" name="Service" class="nav-link" alt="">Сервис</a>
-          </li>
-          <li>
-            <a href="#Portfolio" name="Portfolio" class="nav-link" alt=""
-              >Портфолио</a
+            <a href="#services" rel="services" class="navbar__link"
+              >Servicing</a
             >
           </li>
           <li>
-            <a href="#blog" name="blog" class="nav-link" alt="">Блог</a>
+            <a href="#portfolio" rel="portfolio" class="navbar__link"
+              >Portfolio</a
+            >
           </li>
           <li>
-            <a href="#Contact" name="Contact" class="nav-link" alt="">Контакты</a>
+            <a href="#blog" rel="blog" class="navbar__link">Blog</a>
           </li>
           <li>
-            <input
-              type="checkbox"
-              name="searchmenu"
-              id="searchmenu"
-              class="searchmenu"
-            />
-            <label for="searchmenu" class="searchmenu">
-              <i class="search-fla flaticon-magnifier"></i>
-            </label>
-            <form action=".php" class="search_form" method="POST">
-              <input
-                type="text"
-                name="search"
-                class="searchwindow"
-                placeholder="Поиск"
-              />
-            </form>
+            <a href="#contact" rel="contact" class="navbar__link">Contact us</a>
           </li>
         </ul>
+        <input
+          type="checkbox"
+          name="search__icon"
+          id="search__icon"
+          class="search__icon"
+        />
+        <label for="search__icon" class="header__nav__search">
+          <i class="header__nav__search__icon flaticon-magnifier"></i>
+        </label>
+        <form action=".php" method="POST" class="search_form">
+          <input
+            class="search__window"
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Search"
+          />
+        </form>
       </nav>
     </header>
-    <main class="main" id="main">
-      <section class="goal">
-        <div class="bg-section"></div>
-        <div class="goal-title">
-          <h1>Проект веб-разработки</h1>
+
+    <header class="header__head">
+      <div class="header__head_background"></div>
+      <img src="./img/head/pexels.jpg" class="header__head_image" alt="" />
+      <div class="header__head_body">
+        <h1 class="header__head_title">
+          Web development project
+        </h1>
+        <p class="header__head_subtitle">
+          Very suitable to support all web development projects
+        </p>
+        <div class="header__head_buttom">
+          <a
+            href="#services"
+            rel="services"
+            class="head__buttom_link_left buttom__link"
+            >OUR SERVICES</a
+          >
+          <a
+            href="#tariffs"
+            rel="tariffs"
+            class="head__buttom_link_right buttom__link"
+            >HIRE IS NOW</a
+          >
         </div>
-        <div class="p">
-          <p>Очень подходит для поддержки всех проектов веб-разработки</p>
-        </div>
-        <div class="to_order">
-          <a href="#Service" class="buttom-1">НАШИ СЕРВИСЫ</a>
-          <a href="#plan" class="buttom-2">ЗАКАЗАТЬ СЕЙЧАС</a>
-        </div>
-        <div class="show">
-          <a href="#plan">
-            <i class="fla flaticon-down-arrow"></i>
-          </a>
-        </div>
-      </section>
-      <content>
-        <section class="company" id="company">
-          <div class="box-1">
-            <h1>О нашей компании</h1>
-            <p>
-              Далеко-далеко за словесными горами в стране, гласных и согласных
-              живут рыбные тексты. Взобравшись, решила, лучше! Что снова
-              заглавных путь, предложения на берегу.
+        <a href="#about" rel="about" class="header__head_bottom_link">
+          <i class="header__head_flaticon flaticon-down-arrow"></i>
+        </a>
+      </div>
+    </header>
+
+    <main class="content__wrapper">
+      <div class="about" id="about">
+        <div class="background__page">
+          <aside class="about__title content__header">
+            <h1 class="content__header_title">About Us</h1>
+            <p class="content__header_subtitle">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam,
             </p>
-          </div>
-          <div class="box-2">
-            <i class="fla flaticon-signs"></i>
-            <h1>Лучшие иконки</h1>
-            <p>
-              Далеко-далеко за словесными горами в стране, гласных и согласных
-              живут рыбные тексты. Рукопись журчит свой, рекламных но они свой
-              свое переписали приставка маленькая.
-            </p>
-          </div>
-          <div class="box-3">
-            <i class="fla flaticon-transfer"></i>
-            <h1>Одна страница</h1>
-            <p>
-              Далеко-далеко за словесными горами в стране, гласных и согласных
-              живут рыбные тексты. Речью все заманивший подпоясал на берегу
-              грустный знаках раз, коварный щеке по всей.
-            </p>
-          </div>
-          <div class="box-4">
-            <i class="fla flaticon-head"></i>
-            <h1>Полностью отзывчивый</h1>
-            <p>
-              Далеко-далеко за словесными горами в стране, гласных и согласных
-              живут рыбные тексты. Великий грустный журчит, сих по всей свое
-              встретил выйти речью проектах свою.
-            </p>
-          </div>
-        </section>
-        <section class="Service" id="Service">
-          <div class="box-1">
-            <h1>Наши Сервисы</h1>
-            <p>
-              Далеко-далеко за словесными горами в стране, гласных и согласных
-              живут рыбные тексты. Его осталось рукопись, коварный грамматики
-              силуэт.
-            </p>
-          </div>
-          <div class="box-2 info">
-            <div class="svg">
-              <i class="fla flaticon-celular"></i>
-            </div>
-            <h1>Исследование</h1>
-            <p>
-              Далеко-далеко за словесными горами в стране, гласных и согласных
-              живут рыбные тексты. Вершину дорогу букв предупредила lorem семь
-              первую, всеми, они, ты единственное ведущими вопрос языком,
-              буквоград заглавных если образ пустился возвращайся.
-            </p>
-            <a href="#">ЧИТАТЬ ДАЛЕЕ</a>
-          </div>
-          <div class="box-3 info">
-            <div class="svg">
-              <i class="fla flaticon-celular"></i>
-            </div>
-            <h1>Портфолио</h1>
-            <p>
-              Далеко-далеко за словесными горами в стране, гласных и согласных
-              живут рыбные тексты. За, его? Но повстречался бросил, великий
-              маленький безорфографичный большого прямо пунктуация путь они это.
-              Послушавшись текста рыбного дороге свое раз.
-            </p>
-            <a href="#">ЧИТАТЬ ДАЛЕЕ</a>
-          </div>
-          <div class="box-4 info">
-            <div class="svg">
-              <i class="fla flaticon-celular"></i>
-            </div>
-            <h1>Служба поддержки</h1>
-            <p>
-              Далеко-далеко за словесными горами в стране, гласных и согласных
-              живут рыбные тексты. Дороге обеспечивает оксмокс повстречался даже
-              это, меня безорфографичный. Дал, своего предупредила мир! Там
-              рекламных власти он наш, пояс рукопись великий!
-            </p>
-            <a href="#">ЧИТАТЬ ДАЛЕЕ</a>
-          </div>
-          <div class="box-5 info">
-            <div class="svg">
-              <i class="fla flaticon-celular"></i>
-            </div>
-            <h1>Документация</h1>
-            <p>
-              Далеко-далеко за словесными горами в стране, гласных и согласных
-              живут рыбные тексты. Запятых пояс переулка языкового пустился
-              жаренные, снова родного единственное сих щеке составитель,
-              всемогущая продолжил, обеспечивает власти предупреждал великий
-              силуэт но!
-            </p>
-            <a href="#">ЧИТАТЬ ДАЛЕЕ</a>
-          </div>
-          <div class="box-6 info">
-            <div class="svg">
-              <i class="fla flaticon-celular"></i>
-            </div>
-            <h1>Развитие</h1>
-            <p>
-              Далеко-далеко за словесными горами в стране, гласных и согласных
-              живут рыбные тексты. Эта парадигматическая букв на берегу города.
-              Курсивных домах, семантика продолжил. Подпоясал свою
-              парадигматическая жизни переписали языком однажды вершину речью,
-              там своего.
-            </p>
-            <a href="#">ЧИТАТЬ ДАЛЕЕ</a>
-          </div>
-          <div class="box-7 info">
-            <div class="svg">
-              <i class="fla flaticon-celular"></i>
-            </div>
-            <h1>Дизайн</h1>
-            <p>
-              Далеко-далеко за словесными горами в стране, гласных и согласных
-              живут рыбные тексты. Рыбными свое запятых до, текст скатился что
-              если единственное строчка букв продолжил рукопись щеке за,
-              правилами дал свой переписывается бросил.
-            </p>
-            <a href="#">ЧИТАТЬ ДАЛЕЕ</a>
-          </div>
-        </section>
-        <section class="Portfolio" id="Portfolio">
-          <div class="box-1">
-            <h1>Последние Работы</h1>
-            <p>
-              Далеко-далеко за словесными горами в стране, гласных и согласных
-              живут рыбные тексты. Если, взгляд возвращайся о меня прямо.
-            </p>
-          </div>
-          <div class="box-2">
-            <a href="">ВСЕ</a>
-            <a href="">ВЕБ-ДИЗАЙН</a>
-            <a href="">UI/UX ДИЗАЙН</a>
-            <a href="">МАКЕТЫ</a>
-          </div>
-          <div class="box-3 scale">
-            <a href="">
-              <div class="bg-text">
-                <div class="description">
-                  <h1>Hand Watch</h1>
-                  <p>UI/UX ДИЗАЙН</p>
-                </div>
-              </div>
-              <img src="img/Layer-1.jpg" alt=""
-            /></a>
-          </div>
-          <div class="box-4 scale">
-            <a href="">
-              <div class="bg-text">
-                <div class="description">
-                  <h1>Hand Watch</h1>
-                  <p>UI/UX ДИЗАЙН</p>
-                </div>
-              </div>
-              <img src="img/Layer-2.jpg" alt=""
-            /></a>
-          </div>
-          <div class="box-5 scale">
-            <a href="">
-              <div class="bg-text">
-                <div class="description">
-                  <h1>Hand Watch</h1>
-                  <p>UI/UX ДИЗАЙН</p>
-                </div>
-              </div>
-              <img src="img/Layer-3.jpg" alt=""
-            /></a>
-          </div>
-          <div class="box-6 scale">
-            <a href="">
-              <div class="bg-text">
-                <div class="description">
-                  <h1>Hand Watch</h1>
-                  <p>UI/UX ДИЗАЙН</p>
-                </div>
-              </div>
-              <img src="img/Layer-4.jpg" alt=""
-            /></a>
-          </div>
-          <div class="box-7 scale">
-            <a href="">
-              <div class="bg-text">
-                <div class="description">
-                  <h1>Hand Watch</h1>
-                  <p>UI/UX ДИЗАЙН</p>
-                </div>
-              </div>
-              <img src="img/Layer-5.jpg" alt=""
-            /></a>
-          </div>
-          <div class="box-8 scale">
-            <a href="">
-              <div class="bg-text">
-                <div class="description">
-                  <h1>Hand Watch</h1>
-                  <p>UI/UX ДИЗАЙН</p>
-                </div>
-              </div>
-              <img src="img/Layer-6.jpg" alt=""
-            /></a>
-          </div>
-          <div class="box-9">
-            <a href="">ПОСМОТРЕТЬ ВСЕ</a>
-          </div>
-        </section>
-        <section class="plan" id="plan">
-          <div class="box-1">
-            <h1>Ценовой план</h1>
-            <p>
-              Далеко-далеко за словесными горами в стране, гласных и согласных
-              живут рыбные тексты. Буквоград, точках рыбного там, пояс текстов
-              использовало.
-            </p>
-          </div>
-          <div class="box-2">
-            <h1>Free Trail</h1>
-            <p><sup>$ </sup><span>00</span> в месяц</p>
-            <ul>
-              <li>30 Дней Бесплатно</li>
-              <li>5 Бесплатных Проектов</li>
-              <li>PHP 5 Включено</li>
-              <li>Поддержка 24/7</li>
-            </ul>
-            <span>
-              <a href="#">Заказать сейчас</a>
-            </span>
-          </div>
-          <div class="box-3">
-            <h1>Basic</h1>
-            <p><sup>$ </sup><span>50</span> в месяц</p>
-            <ul>
-              <li>30 Дней Бесплатно</li>
-              <li>5 Бесплатных Проектов</li>
-              <li>PHP 5 Включено</li>
-              <li>Поддержка 24/7</li>
-            </ul>
-            <span>
-              <a href="#">Заказать сейчас</a>
-            </span>
-          </div>
-          <div class="box-4">
-            <h1>Ultimates</h1>
-            <p><sup>$ </sup><span>99</span> в месяц</p>
-            <ul>
-              <li>30 Дней Бесплатно</li>
-              <li>5 Бесплатных Проектов</li>
-              <li>PHP 5 Включено</li>
-              <li>Поддержка 24/7</li>
-            </ul>
-            <span>
-              <a href="#">Заказать сейчас</a>
-            </span>
-          </div>
-        </section>
-        <section class="Team" id="Team">
-          <div class="box-1">
-            <h1>Члены нашей команды</h1>
-            <p>
-              Далеко-далеко за словесными горами в стране, гласных и согласных
-              живут рыбные тексты. Одна они предупреждал.
-            </p>
-          </div>
-          <div class="container">
-            <div class="slider">
-              <div class="slider__wrapper">
-                <div class="slider__item">
-                  <div class="slider__content">
-                    <div class="slider__content_header">
-                      <img
-                        class="slider__content_img"
-                        src="img/Layer-5.jpg"
-                        alt=""
-                      />
-                    </div>
-                    <h2 class="slider__content_title">John Doe</h2>
-                    <p class="slider__content_title">General Manager</p>
-                    <div class="slider__content_footer">
-                      <div class="slider__content_avatar">
-                        <img
-                          class="slider__content_photo"
-                          src="/examples/images/photo-2.jpg"
-                          alt=""
-                        />
-                      </div>
-                      <a href="facebook" class="slider__content_icon">
-                        <i class="slider__content_icon fla flaticon-logo"></i>
-                      </a>
-                      <a href="tvitter" class="slider__content_icon">
-                        <i
-                          class="slider__content_icon fla flaticon-silhouette"
-                        ></i>
-                      </a>
-                      <a href="Hootsuite" class="slider__content_icon">
-                        <i
-                          class="slider__content_icon fla flaticon-doodle-ly"
-                        ></i>
-                      </a>
-                      <a href="#" class="slider__content_icon">
-                        <i
-                          class="slider__content_icon fla flaticon-social-1"
-                        ></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="slider__item">
-                  <div class="slider__content">
-                    <div class="slider__content_header">
-                      <img
-                        class="slider__content_img"
-                        src="img/Layer-3.jpg"
-                        alt=""
-                      />
-                    </div>
-                    <h2 class="slider__content_title">Alexa Biru</h2>
-                    <p class="slider__content_title">Office Director</p>
-                    <div class="slider__content_footer">
-                      <div class="slider__content_avatar">
-                        <img
-                          class="slider__content_photo"
-                          src="/examples/images/photo-2.jpg"
-                          alt=""
-                        />
-                      </div>
-                      <a href="facebook" class="slider__content_icon">
-                        <i class="slider__content_icon fla flaticon-logo"></i>
-                      </a>
-                      <a href="tvitter" class="slider__content_icon">
-                        <i
-                          class="slider__content_icon fla flaticon-silhouette"
-                        ></i>
-                      </a>
-                      <a href="Hootsuite" class="slider__content_icon">
-                        <i
-                          class="slider__content_icon fla flaticon-doodle-ly"
-                        ></i>
-                      </a>
-                      <a href="#" class="slider__content_icon">
-                        <i
-                          class="slider__content_icon fla flaticon-social-1"
-                        ></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="slider__item">
-                  <div class="slider__content">
-                    <div class="slider__content_header">
-                      <img
-                        class="slider__content_img"
-                        src="img/Layer-1.jpg"
-                        alt=""
-                      />
-                    </div>
-                    <h2 class="slider__content_title">Ronobir sing</h2>
-                    <p class="slider__content_title">Admin</p>
-                    <div class="slider__content_footer">
-                      <div class="slider__content_avatar">
-                        <img
-                          class="slider__content_photo"
-                          src="/examples/images/photo-2.jpg"
-                          alt=""
-                        />
-                      </div>
-                      <a href="facebook" class="slider__content_icon">
-                        <i class="slider__content_icon fla flaticon-logo"></i>
-                      </a>
-                      <a href="tvitter" class="slider__content_icon">
-                        <i
-                          class="slider__content_icon fla flaticon-silhouette"
-                        ></i>
-                      </a>
-                      <a href="Hootsuite" class="slider__content_icon">
-                        <i
-                          class="slider__content_icon fla flaticon-doodle-ly"
-                        ></i>
-                      </a>
-                      <a href="#" class="slider__content_icon">
-                        <i
-                          class="slider__content_icon fla flaticon-social-1"
-                        ></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="slider__item">
-                  <div class="slider__content">
-                    <div class="slider__content_header">
-                      <img
-                        class="slider__content_img"
-                        src="img/Layer-2.jpg"
-                        alt=""
-                      />
-                    </div>
-                    <h2 class="slider__content_title">John Doe</h2>
-                    <p class="slider__content_title">General Manager</p>
-                    <div class="slider__content_footer">
-                      <div class="slider__content_avatar">
-                        <img
-                          class="slider__content_photo"
-                          src="/examples/images/photo-2.jpg"
-                          alt=""
-                        />
-                      </div>
-                      <a href="facebook" class="slider__content_icon">
-                        <i class="slider__content_icon fla flaticon-logo"></i>
-                      </a>
-                      <a href="tvitter" class="slider__content_icon">
-                        <i
-                          class="slider__content_icon fla flaticon-silhouette"
-                        ></i>
-                      </a>
-                      <a href="Hootsuite" class="slider__content_icon">
-                        <i
-                          class="slider__content_icon fla flaticon-doodle-ly"
-                        ></i>
-                      </a>
-                      <a href="#" class="slider__content_icon">
-                        <i
-                          class="slider__content_icon fla flaticon-social-1"
-                        ></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="slider__item">
-                  <div class="slider__content">
-                    <div class="slider__content_header">
-                      <img
-                        class="slider__content_img"
-                        src="img/Layer-3.jpg"
-                        alt=""
-                      />
-                    </div>
-                    <h2 class="slider__content_title">John Doe</h2>
-                    <p class="slider__content_title">General Manager</p>
-                    <div class="slider__content_footer">
-                      <div class="slider__content_avatar">
-                        <img
-                          class="slider__content_photo"
-                          src="/examples/images/photo-2.jpg"
-                          alt=""
-                        />
-                      </div>
-                      <a href="facebook" class="slider__content_icon">
-                        <i class="slider__content_icon fla flaticon-logo"></i>
-                      </a>
-                      <a href="tvitter" class="slider__content_icon">
-                        <i
-                          class="slider__content_icon fla flaticon-silhouette"
-                        ></i>
-                      </a>
-                      <a href="Hootsuite" class="slider__content_icon">
-                        <i
-                          class="slider__content_icon fla flaticon-doodle-ly"
-                        ></i>
-                      </a>
-                      <a href="#" class="slider__content_icon">
-                        <i
-                          class="slider__content_icon fla flaticon-social-1"
-                        ></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="slider__item">
-                  <div class="slider__content">
-                    <div class="slider__content_header">
-                      <img
-                        class="slider__content_img"
-                        src="img/Layer-4.jpg"
-                        alt=""
-                      />
-                    </div>
-                    <h2 class="slider__content_title">John Doe</h2>
-                    <p class="slider__content_title">General Manager</p>
-                    <div class="slider__content_footer">
-                      <div class="slider__content_avatar">
-                        <img
-                          class="slider__content_photo"
-                          src="/examples/images/photo-2.jpg"
-                          alt=""
-                        />
-                      </div>
-                      <a href="facebook" class="slider__content_icon">
-                        <i class="slider__content_icon fla flaticon-logo"></i>
-                      </a>
-                      <a href="tvitter" class="slider__content_icon">
-                        <i
-                          class="slider__content_icon fla flaticon-silhouette"
-                        ></i>
-                      </a>
-                      <a href="Hootsuite" class="slider__content_icon">
-                        <i
-                          class="slider__content_icon fla flaticon-doodle-ly"
-                        ></i>
-                      </a>
-                      <a href="#" class="slider__content_icon">
-                        <i
-                          class="slider__content_icon fla flaticon-social-1"
-                        ></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class="slider__item">
-                  <div class="slider__content">
-                    <div class="slider__content_header">
-                      <img
-                        class="slider__content_img"
-                        src="img/Layer-6.jpg"
-                        alt=""
-                      />
-                    </div>
-                    <h2 class="slider__content_title">John Doe</h2>
-                    <p class="slider__content_title">General Manager</p>
-                    <div class="slider__content_footer">
-                      <div class="slider__content_avatar">
-                        <img
-                          class="slider__content_photo"
-                          src="/examples/images/photo-2.jpg"
-                          alt=""
-                        />
-                      </div>
-                      <a href="facebook" class="slider__content_icon">
-                        <i class="slider__content_icon fla flaticon-logo"></i>
-                      </a>
-                      <a href="tvitter" class="slider__content_icon">
-                        <i
-                          class="slider__content_icon fla flaticon-silhouette"
-                        ></i>
-                      </a>
-                      <a href="Hootsuite" class="slider__content_icon">
-                        <i
-                          class="slider__content_icon fla flaticon-doodle-ly"
-                        ></i>
-                      </a>
-                      <a href="#" class="slider__content_icon">
-                        <i
-                          class="slider__content_icon fla flaticon-social-1"
-                        ></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <a
-                class="slider__control slider__control_left"
-                href="#"
-                role="button"
-              ></a>
-              <a
-                class="slider__control slider__control_right"
-                href="#"
-                role="button"
-              ></a>
-            </div>
-          </div>
-        </section>
-        <section class="blog" id="blog">
-          <div class="box-1">
-            <h1>Блог</h1>
-            <p>
-              Далеко-далеко за словесными горами в стране, гласных и согласных
-              живут рыбные тексты. Одна они предупреждал.
-            </p>
-          </div>
-          <div class="blog_content">
-            <div class="box-2">
-              <img src="img/seo.jpg" alt="" />
-            </div>
-            <div class="box-3">
-              <a href="#">
-                <h1>SEO Quis Vestibulum</h1>
-              </a>
-              <span>
-                <i class="fla flaticon-calendary"></i>
-                14.0702017 &nbsp;
-                <i class="fla flaticon-listing"></i>
-                Развитие
-              </span>
-              <p>
-                Далеко-далеко за словесными горами в стране, гласных и согласных
-                живут рыбные тексты. Залетают жизни всемогущая его lorem прямо
-                текстов текста вершину на берегу.
+          </aside>
+          <div class="about__page_wrapper">
+            <div class="about__page">
+              <i class="about__page_icon flaticon-signs"></i>
+              <h2 class="about__page_title">Awesome Icons</h2>
+              <p class="about__page_subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor
               </p>
             </div>
-            <div class="box-4">
-              <img src="img/apple.jpg" alt="" />
-            </div>
-            <div class="box-5">
-              <a href="#">
-                <h1>SEO Quis Vestibulum</h1>
-              </a>
-              <span>
-                <i class="fla flaticon-calendary"></i>
-                14.0702017 &nbsp;
-                <i class="fla flaticon-listing"></i>
-                Развитие
-              </span>
-              <p>
-                Далеко-далеко за словесными горами в стране, гласных и согласных
-                живут рыбные тексты. Эта инициал предупредила даже наш гор
-                дороге, текста, решила подпоясал, образ б
+
+            <div class="about__page">
+              <i class="about__page_icon flaticon-transfer"></i>
+              <h2 class="about__page_title">One Page</h2>
+              <p class="about__page_subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor
               </p>
             </div>
-            <div class="box-6">
-              <img src="img/imac-apple.jpg" alt="" />
-            </div>
-            <div class="box-7">
-              <a href="#">
-                <h1>SEO Quis Vestibulum</h1>
-              </a>
-              <span>
-                <i class="fla flaticon-calendary"></i>
-                14.0702017 &nbsp;
-                <i class="fla flaticon-listing"></i>
-                Развитие
-              </span>
-              <p>
-                Далеко-далеко за словесными горами в стране, гласных и согласных
-                живут рыбные тексты. Ведущими, лучше предупредила до над своего
-                свой безорфографичный! Запятой роель.
+
+            <div class="about__page">
+              <i class="about__page_icon flaticon-head"></i>
+              <h2 class="about__page_title">Fully Responsive</h2>
+              <p class="about__page_subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor
               </p>
             </div>
           </div>
-          <div class="link_b">
-            <a href="#" class="button">Узнать Больше</a>
-          </div>
-        </section>
-        <section class="contact" id="Contact">
-          <div class="box-1">
-            <h1>Связаться с нами</h1>
-            <p>
-              Далеко-далеко за словесными горами в стране, гласных и согласных
-              живут рыбные тексты. Одна они предупреждал.
+        </div>
+      </div>
+
+      <div class="Services" id="services">
+        <div class="background__page">
+          <aside class="Services__title content__header">
+            <h1 class="content__header_title">Our Services</h1>
+            <p class="content__header_subtitle">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam,
             </p>
-          </div>
-          <div class="box-2">
-            <div class="block">
-              <a
-                href="#"
-                class="link_ct"
-                data-title="Посмотреть наше расположение на карте"
-              >
-                <i class="fla flaticon-locate"></i>
-              </a>
-              <br />
-              <p>
-                <a href="#">Нобинагар Савар</a>, <br />
-                <a href="#">Дакка Бангладеш</a>
+          </aside>
+          <div class="Services__list">
+            <div class="Services__list__card">
+              <i class="Services__list__card_icon flaticon-celular"></i>
+              <h2 class="Services__list__card_title">Research</h2>
+              <p class="Services__list__card_subtitle">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesentium voluptatum iti atque corrupti quos.
               </p>
+              <a href="" class="Services__list__card_buttom">READ MORE</a>
             </div>
-            <div class="block">
-              <a
-                href="#"
-                class="link_ct"
-                data-title="Полная информация о контактах"
-              >
-                <i class="fla flaticon-technology"></i> </a
-              ><br />
-              <a href="tel:+8801743331996">+8801743331996</a><br />
-              <a href="tel:+8801928737807">+8801928737807</a>
+            <div class="Services__list__card">
+              <i class="Services__list__card_icon flaticon-celular"></i>
+              <h2 class="Services__list__card_title">Portfolio</h2>
+              <p class="Services__list__card_subtitle">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesentium voluptatum iti atque corrupti quos.
+              </p>
+              <a href="" class="Services__list__card_buttom">READ MORE</a>
             </div>
-            <div class="block">
-              <a
-                href="#"
-                class="link_ct"
-                data-title="Свяжитесь нами по электронной почте"
-              >
-                <i class="fla flaticon-envelope"></i> </a
-              ><br />
-              <a href="mailto:quickmasud@gmail.com">quickmasud@gmail.com</a
-              ><br />
-              <a href="mailto:quickmasud@yahoo.com">quickmasud@yahoo.com</a>
+            <div class="Services__list__card">
+              <i class="Services__list__card_icon flaticon-celular"></i>
+              <h2 class="Services__list__card_title">Support</h2>
+              <p class="Services__list__card_subtitle">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesentium voluptatum iti atque corrupti quos.
+              </p>
+              <a href="" class="Services__list__card_buttom">READ MORE</a>
+            </div>
+            <div class="Services__list__card">
+              <i class="Services__list__card_icon flaticon-celular"></i>
+              <h2 class="Services__list__card_title">Documentation</h2>
+              <p class="Services__list__card_subtitle">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesentium voluptatum iti atque corrupti quos.
+              </p>
+              <a href="" class="Services__list__card_buttom">READ MORE</a>
+            </div>
+            <div class="Services__list__card">
+              <i class="Services__list__card_icon flaticon-celular"></i>
+              <h2 class="Services__list__card_title">Development</h2>
+              <p class="Services__list__card_subtitle">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesentium voluptatum iti atque corrupti quos.
+              </p>
+              <a href="" class="Services__list__card_buttom">READ MORE</a>
+            </div>
+            <div class="Services__list__card">
+              <i class="Services__list__card_icon flaticon-celular"></i>
+              <h2 class="Services__list__card_title">Design</h2>
+              <p class="Services__list__card_subtitle">
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesentium voluptatum iti atque corrupti quos.
+              </p>
+              <a href="" class="Services__list__card_buttom">READ MORE</a>
             </div>
           </div>
-          <div class="mesege">
-            <form action="php" method="POST" name="form_1">
-              <input type="text" name="name" placeholder="Ваше Имя" />
-              <input type="text" name="surname" placeholder="Ваше Фамилия" />
-              <input type="Email" name="email" placeholder="Ваш Email" /><br />
-              <input type="tel" name="tel" placeholder="Ваш Телефон" /><br />
-              <textarea
-                name="mesege"
-                placeholder="Напишите сообщение!"
-              ></textarea
-              ><br />
-              <input type="submit" name="submit" value="Отправить" />
-            </form>
+        </div>
+      </div>
+
+      <div class="portfolio" id="portfolio">
+        <div class="background__page">
+          <aside class="portfolio__title content__header">
+            <h1 class="content__header_title">Latest Works</h1>
+            <p class="content__header_subtitle">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam,
+            </p>
+          </aside>
+
+          <div class="portfolio__nav">
+            <a
+              href="portfolio-index.html"
+              class="portfolio__nav__link buttom__link"
+              >ALL</a
+            >
+            <a
+              href="portfolio-index.html"
+              class="portfolio__nav__link buttom__link"
+              >WEB DESIGN</a
+            >
+            <a
+              href="portfolio-index.html"
+              class="portfolio__nav__link buttom__link"
+              >UI/UX DESIGN</a
+            >
+            <a
+              href="portfolio-index.html"
+              class="portfolio__nav__link buttom__link"
+              >MOCKUPS</a
+            >
           </div>
-        </section>
-      </content>
+
+          <div class="portfolio__body">
+            <div class="portfolio__body__item">
+              <a href="portfolio.html" alt="" class="bg-portfolio__body__item">
+                <h1 class="title-portfolio__body__item">Hand Watch</h1>
+                <p class="subtitle-portfolio__body__item">ui/ux design</p>
+              </a>
+
+              <img
+                src="./img/portfolio/Web-Development-skin.jpg"
+                class="portfolio__body__item_image"
+                alt="image"
+              />
+            </div>
+            <div class="portfolio__body__item">
+              <a href="portfolio.html" alt="" class="bg-portfolio__body__item">
+                <h1 class="title-portfolio__body__item">Hand Watch</h1>
+                <p class="subtitle-portfolio__body__item">ui/ux design</p>
+              </a>
+              <img
+                src="./img/portfolio/Layer-2.jpg"
+                class="portfolio__body__item_image"
+                alt="image"
+              />
+            </div>
+            <div class="portfolio__body__item">
+              <a href="portfolio.html" alt="" class="bg-portfolio__body__item">
+                <h1 class="title-portfolio__body__item">Hand Watch</h1>
+                <p class="subtitle-portfolio__body__item">ui/ux design</p>
+              </a>
+
+              <img
+                src="./img/portfolio/Layer-3.jpg"
+                class="portfolio__body__item_image"
+                alt="image"
+              />
+            </div>
+            <div class="portfolio__body__item">
+              <a href="portfolio.html" alt="" class="bg-portfolio__body__item">
+                <h1 class="title-portfolio__body__item">Hand Watch</h1>
+                <p class="subtitle-portfolio__body__item">ui/ux design</p>
+              </a>
+
+              <img
+                src="./img/portfolio/Layer-4.jpg"
+                class="portfolio__body__item_image"
+                alt="image"
+              />
+            </div>
+            <div class="portfolio__body__item">
+              <a href="portfolio.html" alt="" class="bg-portfolio__body__item">
+                <h1 class="title-portfolio__body__item">Hand Watch</h1>
+                <p class="subtitle-portfolio__body__item">ui/ux design</p>
+              </a>
+
+              <img
+                src="./img/portfolio/Layer-5.jpg"
+                class="portfolio__body__item_image"
+                alt="image"
+              />
+            </div>
+            <div class="portfolio__body__item">
+              <a href="portfolio.html" alt="" class="bg-portfolio__body__item">
+                <h1 class="title-portfolio__body__item">Hand Watch</h1>
+                <p class="subtitle-portfolio__body__item">ui/ux design</p>
+              </a>
+
+              <img
+                src="./img/portfolio/Layer-6.jpg"
+                class="portfolio__body__item_image"
+                alt="image"
+              />
+            </div>
+          </div>
+
+          <div class="portfolio__footer">
+            <a
+              href="portfolio-index.html"
+              class="portfolio__footer__link buttom__link"
+              >VIEW ALL</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="tariffs" id="tariffs">
+        <div class="background__page">
+          <aside class="tariffs__title content__header">
+            <h1 class="content__header_title">Pricing Plan</h1>
+            <p class="content__header_subtitle">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam,
+            </p>
+          </aside>
+
+          <div class="tariffs__body">
+            <div class="tariffs__item">
+              <div class="tariffs__description">
+                <h3 class="tariffs__iten__title">Free Trail</h3>
+                <p class="tariffs__item__cost">
+                  <sup class="tariffs__currency">$</sup>
+                  <span class="tariffs__price">00</span>
+                  per month
+                </p>
+
+                <ul class="tariffs__list">
+                  <li>30 Free Trail</li>
+                  <li>5 Free Projects</li>
+                  <li>PHP 5 Enabled</li>
+                  <li>24/7 Suports</li>
+                </ul>
+                <a href="#" class="tariffs__link buttom__link">Order Now</a>
+              </div>
+            </div>
+
+            <div class="tariffs__item">
+              <div class="tariffs__description">
+                <h3 class="tariffs__iten__title">Basic</h3>
+                <p class="tariffs__item__cost">
+                  <sup class="tariffs__currency">$</sup>
+                  <span class="tariffs__price">50</span>
+                  per month
+                </p>
+                <ul class="tariffs__list">
+                  <li>30 Free Trail</li>
+                  <li>5 Free Projects</li>
+                  <li>PHP 5 Enabled</li>
+                  <li>24/7 Suports</li>
+                </ul>
+                <a href="#" class="tariffs__link buttom__link">Order Now</a>
+              </div>
+            </div>
+            <div class="tariffs__item">
+              <div class="tariffs__description">
+                <h3 class="tariffs__iten__title">Ultimates</h3>
+                <p class="tariffs__item__cost">
+                  <sup class="tariffs__currency">$</sup>
+                  <span class="tariffs__price">99</span>
+                  per month
+                </p>
+
+                <ul class="tariffs__list">
+                  <li>30 Free Trail</li>
+                  <li>5 Free Projects</li>
+                  <li>PHP 5 Enabled</li>
+                  <li>24/7 Suports</li>
+                </ul>
+                <a href="#" class="tariffs__link buttom__link">Order Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="team" id="team">
+        <aside class="team__title content__header">
+          <h1 class="content__header_title">Our Team Member</h1>
+          <p class="content__header_subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam,
+          </p>
+        </aside>
+        <div class="team__bodi">
+          <div class="slider">
+            <div class="slider__wrapper">
+              <div class="slider__item">
+                <div class="slider__content">
+                  <div class="slider__content_header">
+                    <img
+                      class="slider__content_img"
+                      src="img/team/Layer_8.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <h2 class="slider__content_title">John Doe</h2>
+                  <p class="slider__content_title">General Manager</p>
+                  <div class="slider__content_footer">
+                    <div class="slider__content_avatar">
+                      <img
+                        class="slider__content_photo"
+                        src="/examples/images/photo-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <a href="facebook" class="slider__content_icon">
+                      <i class="slider__content_icon fla flaticon-logo"></i>
+                    </a>
+                    <a href="tvitter" class="slider__content_icon">
+                      <i
+                        class="slider__content_icon fla flaticon-silhouette"
+                      ></i>
+                    </a>
+                    <a href="Hootsuite" class="slider__content_icon">
+                      <i
+                        class="slider__content_icon fla flaticon-doodle-ly"
+                      ></i>
+                    </a>
+                    <a href="#" class="slider__content_icon">
+                      <i class="slider__content_icon fla flaticon-social-1"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__item">
+                <div class="slider__content">
+                  <div class="slider__content_header">
+                    <img
+                      class="slider__content_img"
+                      src="img/team/Layer_9.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <h2 class="slider__content_title">Alexa Biru</h2>
+                  <p class="slider__content_title">Office Director</p>
+                  <div class="slider__content_footer">
+                    <div class="slider__content_avatar">
+                      <img
+                        class="slider__content_photo"
+                        src="/examples/images/photo-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <a href="facebook" class="slider__content_icon">
+                      <i class="slider__content_icon fla flaticon-logo"></i>
+                    </a>
+                    <a href="tvitter" class="slider__content_icon">
+                      <i
+                        class="slider__content_icon fla flaticon-silhouette"
+                      ></i>
+                    </a>
+                    <a href="Hootsuite" class="slider__content_icon">
+                      <i
+                        class="slider__content_icon fla flaticon-doodle-ly"
+                      ></i>
+                    </a>
+                    <a href="#" class="slider__content_icon">
+                      <i class="slider__content_icon fla flaticon-social-1"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__item">
+                <div class="slider__content">
+                  <div class="slider__content_header">
+                    <img
+                      class="slider__content_img"
+                      src="img/team/Layer_10.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <h2 class="slider__content_title">Ronobir sing</h2>
+                  <p class="slider__content_title">Admin</p>
+                  <div class="slider__content_footer">
+                    <div class="slider__content_avatar">
+                      <img
+                        class="slider__content_photo"
+                        src="/examples/images/photo-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <a href="facebook" class="slider__content_icon">
+                      <i class="slider__content_icon fla flaticon-logo"></i>
+                    </a>
+                    <a href="tvitter" class="slider__content_icon">
+                      <i
+                        class="slider__content_icon fla flaticon-silhouette"
+                      ></i>
+                    </a>
+                    <a href="Hootsuite" class="slider__content_icon">
+                      <i
+                        class="slider__content_icon fla flaticon-doodle-ly"
+                      ></i>
+                    </a>
+                    <a href="#" class="slider__content_icon">
+                      <i class="slider__content_icon fla flaticon-social-1"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__item">
+                <div class="slider__content">
+                  <div class="slider__content_header">
+                    <img
+                      class="slider__content_img"
+                      src="./img/team/Layer_8.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <h2 class="slider__content_title">John Doe</h2>
+                  <p class="slider__content_title">General Manager</p>
+                  <div class="slider__content_footer">
+                    <div class="slider__content_avatar">
+                      <img
+                        class="slider__content_photo"
+                        src="/examples/images/photo-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <a href="facebook" class="slider__content_icon">
+                      <i class="slider__content_icon fla flaticon-logo"></i>
+                    </a>
+                    <a href="tvitter" class="slider__content_icon">
+                      <i
+                        class="slider__content_icon fla flaticon-silhouette"
+                      ></i>
+                    </a>
+                    <a href="Hootsuite" class="slider__content_icon">
+                      <i
+                        class="slider__content_icon fla flaticon-doodle-ly"
+                      ></i>
+                    </a>
+                    <a href="#" class="slider__content_icon">
+                      <i class="slider__content_icon fla flaticon-social-1"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__item">
+                <div class="slider__content">
+                  <div class="slider__content_header">
+                    <img
+                      class="slider__content_img"
+                      src="./img/team/Layer_10.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <h2 class="slider__content_title">John Doe</h2>
+                  <p class="slider__content_title">General Manager</p>
+                  <div class="slider__content_footer">
+                    <div class="slider__content_avatar">
+                      <img
+                        class="slider__content_photo"
+                        src="/examples/images/photo-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <a href="facebook" class="slider__content_icon">
+                      <i class="slider__content_icon fla flaticon-logo"></i>
+                    </a>
+                    <a href="tvitter" class="slider__content_icon">
+                      <i
+                        class="slider__content_icon fla flaticon-silhouette"
+                      ></i>
+                    </a>
+                    <a href="Hootsuite" class="slider__content_icon">
+                      <i
+                        class="slider__content_icon fla flaticon-doodle-ly"
+                      ></i>
+                    </a>
+                    <a href="#" class="slider__content_icon">
+                      <i class="slider__content_icon fla flaticon-social-1"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__item">
+                <div class="slider__content">
+                  <div class="slider__content_header">
+                    <img
+                      class="slider__content_img"
+                      src="./img/team/Layer_8.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <h2 class="slider__content_title">John Doe</h2>
+                  <p class="slider__content_title">General Manager</p>
+                  <div class="slider__content_footer">
+                    <div class="slider__content_avatar">
+                      <img
+                        class="slider__content_photo"
+                        src="/examples/images/photo-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <a href="facebook" class="slider__content_icon">
+                      <i class="slider__content_icon fla flaticon-logo"></i>
+                    </a>
+                    <a href="tvitter" class="slider__content_icon">
+                      <i
+                        class="slider__content_icon fla flaticon-silhouette"
+                      ></i>
+                    </a>
+                    <a href="Hootsuite" class="slider__content_icon">
+                      <i
+                        class="slider__content_icon fla flaticon-doodle-ly"
+                      ></i>
+                    </a>
+                    <a href="#" class="slider__content_icon">
+                      <i class="slider__content_icon fla flaticon-social-1"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="slider__item">
+                <div class="slider__content">
+                  <div class="slider__content_header">
+                    <img
+                      class="slider__content_img"
+                      src="./img/team/Layer_9.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <h2 class="slider__content_title">John Doe</h2>
+                  <p class="slider__content_title">General Manager</p>
+                  <div class="slider__content_footer">
+                    <div class="slider__content_avatar">
+                      <img
+                        class="slider__content_photo"
+                        src="/examples/images/photo-2.jpg"
+                        alt=""
+                      />
+                    </div>
+                    <a href="facebook" class="slider__content_icon">
+                      <i class="slider__content_icon fla flaticon-logo"></i>
+                    </a>
+                    <a href="tvitter" class="slider__content_icon">
+                      <i
+                        class="slider__content_icon fla flaticon-silhouette"
+                      ></i>
+                    </a>
+                    <a href="Hootsuite" class="slider__content_icon">
+                      <i
+                        class="slider__content_icon fla flaticon-doodle-ly"
+                      ></i>
+                    </a>
+                    <a href="#" class="slider__content_icon">
+                      <i class="slider__content_icon fla flaticon-social-1"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a
+              class="slider__control slider__control_left"
+              href="#"
+              role="button"
+            ></a>
+            <a
+              class="slider__control slider__control_right"
+              href="#"
+              role="button"
+            ></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="blog" id="blog">
+        <div class="background__page">
+          <aside class="blog__title content__header">
+            <h1 class="content__header_title">Blog</h1>
+            <p class="content__header_subtitle">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam,
+            </p>
+          </aside>
+
+          <div class="blog__body">
+            <div class="blog__row">
+              <a href="single.html" class="blog__item">
+                <img src="./img/blog/seo.jpg" class="blog__img" alt="image" />
+              </a>
+              <div class="blog__item blog__description">
+                <a href="single.html" class="blog__item__link"
+                  >SEO Quis Vestibulum</a
+                >
+                <div class="blog__date">
+                  <i class="blog__icon flaticon-calendary"></i>14.06.2020
+                  <i class="blog__icon flaticon-listing"></i>Development
+                </div>
+                <p class="blog__item__article">
+                  Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                  exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat...
+                </p>
+              </div>
+            </div>
+
+            <div class="blog__row blog__row_revers">
+              <a href="single.html" class="blog__item">
+                <img src="./img/blog/apple.jpg" class="blog__img" alt="image" />
+              </a>
+              <div class="blog__item blog__description">
+                <a href="single.html" class="blog__item__link"
+                  >SEO Quis Vestibulum</a
+                >
+                <div class="blog__date">
+                  <i class="blog__icon flaticon-calendary"></i>14.06.2020
+                  <i class="blog__icon flaticon-listing"></i>Development
+                </div>
+                <p class="blog__item__article">
+                  Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                  exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat...
+                </p>
+              </div>
+            </div>
+
+            <div class="blog__row">
+              <a href="single.html" class="blog__item">
+                <img
+                  src="./img/blog/imac-apple.jpg"
+                  class="blog__img"
+                  alt="image"
+                />
+              </a>
+              <div class="blog__item blog__description">
+                <a href="single.html" class="blog__item__link"
+                  >SEO Quis Vestibulum</a
+                >
+                <div class="blog__date">
+                  <i class="blog__icon flaticon-calendary"></i>14.06.2020
+                  <i class="blog__icon flaticon-listing"></i>Development
+                </div>
+                <p class="blog__item__article">
+                  Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                  exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                  consequat...
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="blog__footer">
+            <a href="blog.html" class="blog__footer__link buttom__link"
+              >MORE VIEW</a
+            >
+          </div>
+        </div>
+      </div>
+
+      <div class="contact" id="contact">
+        <div class="background__page">
+          <aside class="contact__title content__header">
+            <h1 class="content__header_title">Contact Us</h1>
+            <p class="content__header_subtitle">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam,
+            </p>
+          </aside>
+
+          <div class="contact__bodi">
+            <div class="contact__grup">
+              <div class="contact__grup__item">
+                <a
+                  href="#"
+                  class="contact__grup__info"
+                  data-title="Посмотреть наше расположение на карте"
+                >
+                  <i class="contact__grup__icon flaticon-locate"></i>
+                </a>
+                <br />
+                <p>
+                  <a class="contact__grup__link" href="#"
+                    >Nobinagar savar, Dhaka Bangladesh</a
+                  >
+                </p>
+              </div>
+
+              <div class="contact__grup__item">
+                <a
+                  href="#"
+                  class="contact__grup__info"
+                  data-title="Полная информация о контактах"
+                >
+                  <i class="contact__grup__icon flaticon-technology"></i> </a
+                ><br />
+                <a class="contact__grup__link" href="tel:+8801743331996"
+                  >+8801743331996</a
+                ><br />
+                <a class="contact__grup__link" href="tel:+8801928737807"
+                  >+8801928737807</a
+                >
+              </div>
+
+              <div class="contact__grup__item">
+                <a
+                  href="#"
+                  class="contact__grup__info"
+                  data-title="Свяжитесь нами по электронной почте"
+                >
+                  <i class="contact__grup__icon flaticon-envelope"></i> </a
+                ><br />
+                <a
+                  class="contact__grup__link"
+                  href="mailto:quickmasud@gmail.com"
+                  >quickmasud@gmail.com</a
+                ><br />
+                <a
+                  class="contact__grup__link"
+                  href="mailto:quickmasud@yahoo.com"
+                  >quickmasud@yahoo.com</a
+                >
+              </div>
+            </div>
+
+            <div class="contact__mesege">
+              <form action="formdata.php" method="POST" name="form1">
+                <input type="text" name="contactName" placeholder="Your NAME" />
+                <input
+                  type="text"
+                  name="contacSurname"
+                  placeholder="Your SURNAME"
+                />
+                <input
+                  type="Email"
+                  name="contacEmail"
+                  placeholder="Your Email"
+                /><br />
+                <input
+                  type="tel"
+                  name="contacTel"
+                  placeholder="Your Phone"
+                /><br />
+                <textarea
+                  name="contacMesege"
+                  placeholder="Write Massage..."
+                ></textarea
+                ><br />
+                <input type="submit" name="submit" value="Send" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
+
     <footer class="footer">
       <p>Все права защищены &copy; 2020</p>
     </footer>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script type="text/javascript" src="js/slider.js"></script>
-    <script type="text/javascript" src="js/scroll.js"></script>
+
+    <script src="./js/jquery/jquery-3.5.1.min.js"></script>
+    <script src="./js/jquery/jquery.malihu.PageScroll2id.min.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

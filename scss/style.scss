@@ -1,0 +1,96 @@
+// ! font-family: 'Open Sans', sans-serif;
+// ! font-family: 'Roboto', sans-serif;
+
+@import "_header";
+@import "_about";
+@import "_services";
+@import "_portfolio";
+@import "_tariffs";
+@import "_team";
+@import "_blog";
+@import "_contact";
+@import "_footer";
+@import "_media";
+
+body {
+  box-sizing: border-box;
+}
+*:focus{
+  outline: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+ul,ol,li{
+  list-style-type: none;
+  padding: 0;
+}
+
+.background__page {
+  padding: 9% 8%;
+  max-width: 1800px;
+  margin: auto;
+}
+
+.buttom__link {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  color: #212121;
+  border: 2px solid #212121;
+
+  transition: all 0.4s ease;
+}
+
+.buttom__link:hover {
+  background-color: #00897b;
+  border-color: #00897b;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.content__header {
+  max-width: 630px;
+  text-align: center;
+  margin: 0 auto 9% auto;
+
+  .content__header_title {
+    color: #212121;
+    font-family: "Open Sans";
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 1.5px;
+
+    margin-bottom: 36px;
+  }
+  .content__header_subtitle {
+    color: #212121;
+    font-family: "Open Sans";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0.75px;
+  }
+}
+
+.page_numbers{
+  margin-bottom: 3%;
+  text-align: center;
+}
+
+.page_number {
+  padding: 5px 10px;
+}
+
+.page_active {
+  background-color: #00897b;
+  border-color: #00897b;
+  color: #ffffff;
+  cursor: context-menu;
+}
