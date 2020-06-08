@@ -31,19 +31,17 @@
     height: 265px;
   }
 
-  .portfolio__body__item
-  .bg-portfolio__body__item {
-    opacity: .7;
+  .portfolio__body__item .bg-portfolio__body__item {
+    opacity: 0.7;
     color: #ffffff;
   }
 
   .portfolio__footer .portfolio__footer__link {
     padding: 2% 5%;
   }
-  .portfolio__skin{
+  .portfolio__skin {
     height: 1550px;
   }
-
 
   .tariffs__body {
     justify-content: space-around;
@@ -89,7 +87,7 @@
 }
 
 @media only screen and (max-width: 850px) {
-  .header__top{
+  .header__top {
     display: none;
   }
   .header__nav {
@@ -142,11 +140,11 @@
     transition: height 0.4s ease;
   }
 
-  .header__head{
+  .header__head {
     margin-top: 0;
   }
 
-    .header__head_title {
+  .header__head_title {
     margin: 0;
     font-size: 45px;
   }
@@ -186,7 +184,7 @@
 
   .portfolio__skin {
     height: 1150px;
-}
+  }
 
   .blog__description {
     padding-top: 3%;
@@ -205,7 +203,7 @@
 }
 
 @media only screen and (max-width: 450px) {
-  .disablet_item{
+  .disablet_item {
     display: none;
   }
   input.search__icon:checked ~ form.search_form {
@@ -265,11 +263,11 @@
     width: 100%;
     margin: 0 3%;
     margin-bottom: 50px;
-}
+  }
 
-.portfolio__skin {
-  width: 100%;
-}
+  .portfolio__skin {
+    width: 100%;
+  }
 
   .tariffs__body {
     .tariffs__item {
@@ -295,13 +293,13 @@
   }
 
   .contact__mesege [type="text"],
-[type="Email"],
-[type="tel"] {
-  width: 100%;
-}
+  [type="Email"],
+  [type="tel"] {
+    width: 100%;
+  }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 400px) {
   .tariffs__body {
     .tariffs__item {
       width: 250px;
